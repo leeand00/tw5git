@@ -1,0 +1,24 @@
+caption: AfterPush
+order: 1
+tags: [[Two Possible Scenarios - Reverting Changes]]
+title: After Pushing - Two Possible Scenarios - Reverting Changes
+
+
+>After pushing you have a bit less freedom.
+
+#''After''
+#*Someone might have worked on the code you pushed to the remote.
+#*You @@color: red; shouldn't delete commits irreversibly@@ just in case someone used them.
+#*What we can do is @@color:red; revert@@ the commits, which creates a new commit that undoes what the former did.
+#**If you feel like what you've done wasn't useful or it broke something we can revert and commit, the other person can pull it and if he feels he needs the commit he can re-revert the commit to bring it back.
+
+*We can delete on or various commits with `git reset <commit>`
+**This will delete all commits up to and including the referenced `<commit>`
+***And that's what is great about this option, you can just create a commit the undoes what the previous one did...we'll show you in a second.
+*We use the command `git revert <commit>` for that.
+
+!!!Why revert?
+
+*Because if someone was indeed using our commit, we can always re-revert the commit we reverted and bring it back and forth (if someone was using it).
+*Since nothing is deleted, there is always a chance to fix things if something went wrong.
+

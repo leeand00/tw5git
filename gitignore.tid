@@ -1,0 +1,44 @@
+created: 20201226003230672
+creator: aleer
+modified: 20201226021405017
+modifier: aleer
+tags: article
+title: gitignore
+type: text/vnd.tiddlywiki
+
+[[link|https://www.atlassian.com/git/tutorials/saving-changes/gitignore]]
+
+!.gitignore
+
+Git sees every file in your [[working copy]] as one of three things:
+
+#[[Tracked]]
+#*A file which has been previously staged or committed.
+#[[Untracked]]
+#*A file which has not been staged or committed.
+#[[Ignored]]
+#*A file which Git has been explicitly told to ignore.
+
+Ignored files are usually build artifacts and machine generated files that can be derived from your repository source or should otherwise not be committed.  Some common examples are:
+
+*dependency caches, such as the contents of `/node_modules` or `/packages`
+*compiled code, such as `.o` `.pyc` and `.class` files.
+*build output directories, such as `/bin`, `/out`, or `/target`
+*files generated at runtime, such as `.log`, `.lock` or `.tmp`
+*hidden system files, such as `.DS_Store` or `Thumbs.db`
+*personal IDE config files, such as `.idea/workspace.xml`
+
+Ignored files are tracked in a special file named `.gitignore` that is checked in at the root of your repository.  There is no explicit git ignore command: instead the `.gitignore` file must be edited and committed by hand when you have new files that you wish to ignore.  `.gitignore` files contain patterns that are matched against file names in your repository to determine whether or not they should be ignored.
+
+*Ignoring files in Git:
+**[[Git ignore patterns|Git ignore patterns - gitignore]]
+**[[Shared .gitignore files in your repository|Shared gitignore files in your repository - gitignore]]
+**[[Personal Git ignore rules|Personal Git ignore rules - gitignore]]
+**[[Global Git ignore rules|Global Git ignore rules - gitignore]]
+**[[Ignoring a previously committed file|Ignoring a previously committed file - gitignore]]
+**[[Committing an ignored file|Committing an ignored file - gitignore]]
+**[[Stashing an ignored file|Stashing an ignored file - gitignore]]
+**[[Debugging .gitignore files|Debugging .gitignore files - gitignore]]
+
+<<tabs "[tag[gitignore]sort[order]]" "" "" "tc-vertical">>
+

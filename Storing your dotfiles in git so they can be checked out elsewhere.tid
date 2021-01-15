@@ -1,0 +1,11 @@
+created: 20200514191027758
+creator: aleer
+modified: 20200514191515976
+modifier: aleer
+tags: 
+title: Storing your dotfiles in git so they can be checked out elsewhere
+type: text/vnd.tiddlywiki
+
+When you want your `.*rc` files (`.bashrc`, `.vimrc`, `.bash_login`) to be cloned into a new machine, you can [[just use symlinks|https://unix.stackexchange.com/a/586665/3570]] to make it happen.
+
+That way you don't have to mix the rest of your home directory into your git repo where you store the files.

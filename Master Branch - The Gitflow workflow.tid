@@ -1,0 +1,20 @@
+caption: master
+created: 20190111135902723
+creator: aleer
+modified: 20190113162355925
+modifier: aleer
+tags: [[The Gitflow workflow]]
+title: Master Branch - The Gitflow workflow
+type: text/vnd.tiddlywiki
+
+
+
+!Master Branch
+
+*Holds only the latest production ready release.
+**In version `0.1` at the top, your project should be ready to some extent.
+**Maybe it has only a portion of the features, that you need, or that you were expecting; but it is ready, it is working, it is tested.
+**But it is essentially a live version.
+***Your product is a ready version ready to go live, and then you put it in the master branch.
+
+If you have a problem in version `0.1` or any other version, then you may need to do a hotfix.

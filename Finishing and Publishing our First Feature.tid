@@ -1,0 +1,48 @@
+caption: 3
+created: 20190112030107930
+creator: aleer
+modified: 20190115183019971
+modifier: aleer
+order: 3
+tags: [[Gitflow and Source Tree]]
+title: Finishing and Publishing our First Feature
+type: text/vnd.tiddlywiki
+
+!3. Finishing and Publishing our First Feature
+
+!!Using Source Tree
+
+#Click `Git Flow -> Finish Feature (from the dropdown)`
+#A dialog box appears:
+##In the `Finish feature:` drop down select 
+###(in our example `user_input`)
+##We get a nice preview of what it's going to do.
+##*It's different than just a merge because it will use `git merge --no-ff feature/<feature-name>` internally, which adds an extra commit to keep the branch history separate for historical purposes.
+##He selected `Delete Branch`, which would delete the local copy of the branch (not the remote one)
+
+{{FinishFeature.png}}
+
+>''Note:'' In the `develop` branch, this would be alot easier to [[perform a revert|git revert example and diagram explanation]] since it's only one commit.
+
+And then you can go and start a new feature.
+
+---
+
+!!Using gitflow in bash
+
+```
+$ git flow feature finish user_input
+```
+
+*Where `user_input` is the name of the feature to close.
+**`git branch` will let you know what feature you were developing.
+
+>''Note:'' Internally, git-flow used `git merge --no-ff feature/<feature-name>` to make sure you don’t lose any historical information about your feature branch before it is removed.
+
+Committed and then we were back on the initial branch `develop`
+
+{{FinishFeature.png}}
+
+>''Note:'' In the `develop` branch, this would be alot easier to [[perform a revert|git revert example and diagram explanation]] since it's only one commit.
+
+And then you can go and start a new feature.

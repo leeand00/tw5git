@@ -1,0 +1,16 @@
+caption: 1
+created: 20190111154134283
+creator: aleer
+modified: 20190111154215436
+modifier: aleer
+order: 1
+tags: [[Using SourceTree to Initialize a Git-Flow Repository]]
+title: 1 - Using SourceTree to Initialize a Git-Flow Repository
+type: text/vnd.tiddlywiki
+
+```
+$ git init
+Initialized empty Git repository in ~/Documents/IntroToGit/program/.git/
+```
+
+*We're first going to initialize the repository.

@@ -1,0 +1,22 @@
+caption: 6
+created: 20190112230259978
+creator: aleer
+modified: 20190112231152005
+modifier: aleer
+order: 6
+tags: [[Using gitflow bash - Creating our first Gitflow feature]]
+title: 6 - Using gitflow bash - Creating our first Gitflow feature
+type: text/vnd.tiddlywiki
+
+```
+$ vi ./Main
+
+import java.util.Scanner;
+
+public class Main {
+     Scanner scan = new Scanner(System.in);
+     System.out.print("Enter your name: ");
+     String name = scan.nextLine();
+     System.out.println("Your name is: " + name);
+}
+```

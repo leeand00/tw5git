@@ -1,0 +1,24 @@
+caption: BeforePush
+created: 20190105231759203
+creator: aleer
+modified: 20190106181914627
+modifier: aleer
+order: 0
+tags: [[Two Possible Scenarios - Reverting Changes]]
+title: Before Pushing - Two Possible Scenarios - Reverting Changes
+type: text/vnd.tiddlywiki
+
+#''Before''
+#*You can do pretty much whatever you want.
+#*It is really only when you push //when it really matters// because __other people may do work on top of what you've done.__
+#*So, unless you are pushing to a remote branch in which only you are working, @@color: red; NEVER PUSH THINGS THAT WILL BREAK THE PROGRAM.@@ 
+#**If you are working on something, and this something isn't complete, you really shouldn't push this until it until it is complete.
+#**You may commit, but don't push it until it works.
+#**If someone else needs to do work on your part of the program, then you may push it (to a seperate remote branch).
+
+!!Things you can do before pushing:
+
+
+
+<<tabs "[tag[Before Pushing - Two Possible Scenarios - Reverting Changes]sort[order]]">>
+

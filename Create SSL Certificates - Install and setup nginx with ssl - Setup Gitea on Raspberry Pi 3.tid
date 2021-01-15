@@ -1,0 +1,27 @@
+created: 20200514002315511
+creator: aleer
+modified: 20200514002315675
+modifier: aleer
+tags: [[Install and setup nginx with ssl - Setup Gitea on Raspberry Pi 3]]
+title: Create SSL Certificates - Install and setup nginx with ssl - Setup Gitea on Raspberry Pi 3
+type: text/vnd.tiddlywiki
+
+Now we need to create the ssl certificates for the domains
+
+```
+cd ~
+wget https://dl.ef.org/cerbot-auto
+chmod a+x certbot-auto
+sudo ./certbot-auto certonly --standalone -d <your-domain>
+```
+
+----
+
+In order to update the certificates automatically, we need to create a cron job via `sudo crontab -e` and insert the following line
+
+```
+0 1 2 * * sudo service nginx stop && sudo /home/pi/certbot-auto renew --dry-run && sudo service nginx start
+```
+
+*This executes the three commands on every first day of a month at 2AM.
+

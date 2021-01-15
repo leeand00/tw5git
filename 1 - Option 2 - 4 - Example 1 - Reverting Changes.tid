@@ -1,0 +1,23 @@
+caption: 1
+created: 20190106005458091
+creator: aleer
+modified: 20190106005722299
+modifier: aleer
+order: 1
+tags: [[Option 2 - 4 - Example 1 - Reverting Changes]]
+title: 1 - Option 2 - 4 - Example 1 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+The other option...and I'm going to do the same thing again:
+
+```
+$ vi ./Main.java
+$ cat ./Main.java
+
+public class Main {
+   System.out.println("Hello, world");
+}
+
+$ git add -am 'Added the first print statement.'
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```

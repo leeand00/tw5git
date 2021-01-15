@@ -1,0 +1,24 @@
+created: 20200728160320640
+creator: aleer
+modified: 20200904001019516
+modifier: aleer
+tags: term
+title: Pull Request
+type: text/vnd.tiddlywiki
+
+!Definition
+
+A pull request is a request to have your feature branch added back to another user's github project, after you've made changes to it.
+
+!!How to use one to contribute to an existing project
+
+#Open github and find the project, and make sure you have an account.
+#Fork the authors project to your github account (in the github website)
+#Clone the project from your account.
+#Create your feature branch (`git checkout -b my-new-feature` or with git-flow `git flow feature start  my-new-feature`)
+#Commit your changes (`git commit -am 'Add some features'`)
+#Push to the branch back to your repo (`git push origin my-new-feature`)
+#Create a new Pull Request (in the github website)
+#Wait for the author to get back to you about accepting or rejecting the changes for your Pull Request.
+#If they accept the changes, they will merge them into yours.
+#*[[example|https://github.com/pondrejk/vim-readability/pull/6]]

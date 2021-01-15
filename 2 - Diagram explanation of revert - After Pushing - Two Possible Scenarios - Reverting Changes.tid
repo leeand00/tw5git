@@ -1,0 +1,22 @@
+caption: 2
+created: 20190105232608950
+creator: aleer
+modified: 20190105233730481
+modifier: aleer
+order: 2
+tags: [[Diagram explanation of revert - After Pushing - Two Possible Scenarios - Reverting Changes]]
+title: 2 - Diagram explanation of revert - After Pushing - Two Possible Scenarios - Reverting Changes
+type: text/vnd.tiddlywiki
+
+```
+                       C0
+                       / \
+                        |
+                       C1
+                       / \
+                        |
+                master  C2
+```
+
+*And then we do `git revert HEAD^`...
+**This is called a circumflex

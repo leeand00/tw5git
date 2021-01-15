@@ -1,0 +1,43 @@
+caption: 1
+created: 20190111144624307
+creator: aleer
+modified: 20190112011249860
+modifier: aleer
+order: 1
+tags: [[Gitflow and Source Tree]]
+title: Using SourceTree to Initialize a Git-Flow Repository
+type: text/vnd.tiddlywiki
+
+!1. Using ~SourceTree to Initialize a Git-Flow Repository
+
+<<tabs "[tag[Using SourceTree to Initialize a Git-Flow Repository]sort[order]]">>
+
+----
+
+```
+$ git branch
+* develop
+  master
+```
+
+*Then we see that we're left here on the `develop` branch.
+**We'll only be using the `master` branch for production builds.
+**The rest of the time we'll be using the develop branch.
+
+*If we want to start a new feature, we simply go to `gitflow -> Start a New Feature` and that's where we'll start next.
+
+
+<!--
+[[1 - Using SourceTree to Initialize a Git-Flow Repository]]
+
+[[2 - Using SourceTree to Initialize a Git-Flow Repository]]
+
+[[3 - Using SourceTree to Initialize a Git-Flow Repository]]
+
+[[git flow init - Using SourceTree to Initialize a Git-Flow Repository]]
+
+
+
+-->
+
+

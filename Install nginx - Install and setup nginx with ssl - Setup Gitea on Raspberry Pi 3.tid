@@ -1,0 +1,13 @@
+created: 20200513193443736
+creator: aleer
+modified: 20200513193444041
+modifier: aleer
+tags: [[Install and setup nginx with ssl - Setup Gitea on Raspberry Pi 3]]
+title: Install nginx - Install and setup nginx with ssl - Setup Gitea on Raspberry Pi 3
+type: text/vnd.tiddlywiki
+
+
+```
+$ sudo systemctl apt-get install nginx -y
+```
+''Install and configure nginx'' - see https://gog.io/docs/advanced/configuration_for_source_builds#setting-up-nginx-server

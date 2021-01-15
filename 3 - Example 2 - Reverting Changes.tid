@@ -1,0 +1,19 @@
+caption: 3
+created: 20190106184559423
+creator: aleer
+modified: 20190106184858779
+modifier: aleer
+order: 3
+tags: [[Example 2 - Reverting Changes]]
+title: 3 - Example 2 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+```
+Revert "Added the first print statement."
+Reason: it needs to be in a method
+This reverts commit to 67d1f274d6ecbe504341b6622be713511e399ecb.
+```
+''Above is our revert commit message ''
+
+*Here it will ask us to add a commit message for the revert statement.
+*Then we exit vim with `:wq`

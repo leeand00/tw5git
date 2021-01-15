@@ -1,0 +1,19 @@
+caption: 5
+created: 20190106185957098
+creator: aleer
+modified: 20190106190231929
+modifier: aleer
+order: 5
+tags: [[Example 2 - Reverting Changes]]
+title: 5 - Example 2 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+```
+$ cat ./Main.java
+
+public class Main {
+
+}
+```
+
+*Note that the logs (on the previous tab) have the old changes, but that this new commit is missing them.

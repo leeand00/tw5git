@@ -1,0 +1,8 @@
+created: 20201226004218067
+creator: aleer
+modified: 20201226004239027
+modifier: aleer
+title: file-status
+type: text/vnd.tiddlywiki
+
+Git sees every file in your [[working copy]] with one of the following statuses.

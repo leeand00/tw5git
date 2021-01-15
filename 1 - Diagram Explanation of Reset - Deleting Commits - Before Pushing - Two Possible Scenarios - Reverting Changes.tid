@@ -1,0 +1,25 @@
+caption: 1
+created: 20190105230751681
+creator: aleer
+modified: 20190105231346889
+modifier: aleer
+order: 1
+tags: [[Diagram Explanation of Reset - Deleting Commits - Before Pushing - Two Possible Scenarios - Reverting Changes]]
+title: 1 - Diagram Explanation of Reset - Deleting Commits - Before Pushing - Two Possible Scenarios - Reverting Changes
+type: text/vnd.tiddlywiki
+
+
+```
+                          C0
+                          /\
+                           |
+                          C1
+                          /\
+                           |
+                          C2
+                          /\
+                           |
+                   master C3
+```
+
+*Let's say we have our branch here and we want to remove a few commits.

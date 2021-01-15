@@ -1,0 +1,14 @@
+caption: 2
+created: 20190112225041317
+creator: aleer
+modified: 20190113041815774
+modifier: aleer
+order: 2
+tags: [[Using Source Tree to create a feature - Creating our first Gitflow feature]]
+title: 2 - Using Source Tree to create a feature - Creating our first Gitflow feature
+type: text/vnd.tiddlywiki
+
+
+This results in a folder in the GUI, that can contain all the features that are being developed:
+
+{{FeaturesBranch.png}}

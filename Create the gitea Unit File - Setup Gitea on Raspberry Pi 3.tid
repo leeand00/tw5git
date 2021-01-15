@@ -1,0 +1,38 @@
+created: 20200513191412247
+creator: aleer
+modified: 20200513191412669
+modifier: aleer
+tags: [[Setup Gitea on Raspberry Pi 3]]
+title: Create the gitea Unit File - Setup Gitea on Raspberry Pi 3
+type: text/vnd.tiddlywiki
+
+!Create the gitea Unit File
+
+```
+[Unit]
+Description=Gitea
+After=syslog.target
+After=network.target
+After=mariadb.service mysqld.service postgresql.service memcached.service redis.service
+
+[Service]
+# Modify these two values and uncomment them if you have
+# repos with lots of files and get an HTTP error 500 because 
+# of that
+###
+#LimitMEMLOCK=infinity
+#LimitNOFILE=65535
+Type=simple
+User=git
+Group=git
+WorkingDirectory=/home/git/src/code.gitea.io/gitea
+ExecStart=/home/git/src/code.gitea.io/gitea/gitea web web
+Restart=always
+Environment=USER=git HOME=/home/git
+
+[Install]
+WantedBy=mutli-user.target
+```
+`/etc/systemd/system/gitea.service`
+
+

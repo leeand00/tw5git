@@ -1,0 +1,21 @@
+caption: 2
+created: 20190106004732171
+creator: aleer
+modified: 20190106005343977
+modifier: aleer
+order: 2
+tags: [[Option 1 - 4 - Example 1 - Reverting Changes]]
+title: 2 - Option 1 - 4 - Example 1 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+```
+$ git log --decorate
+
+commit 64253725006d9b3fb0696e1c9a6a6ace72410eba (HEAD -> master)
+Author: Andrew J. Leer <leeand00@hotmail.com>
+Date   Tue Nov 6 07:45:17 2018 - 0500
+
+   First commit.
+```
+
+*Let's take a look at what happened, we're back at the first commit as the head.

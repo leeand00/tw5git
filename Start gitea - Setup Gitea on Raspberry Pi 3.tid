@@ -1,0 +1,14 @@
+created: 20200513191617615
+creator: aleer
+modified: 20200513191617821
+modifier: aleer
+tags: [[Setup Gitea on Raspberry Pi 3]]
+title: Start gitea - Setup Gitea on Raspberry Pi 3
+type: text/vnd.tiddlywiki
+
+```
+$ sudo systemctl enable gitea
+$ sudo systemclt start gitea
+```
+''Start gitea''
+

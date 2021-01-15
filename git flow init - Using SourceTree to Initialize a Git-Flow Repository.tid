@@ -1,0 +1,38 @@
+caption: 4
+created: 20190112010311583
+creator: aleer
+modified: 20190112010353525
+modifier: aleer
+order: 4
+tags: [[Using SourceTree to Initialize a Git-Flow Repository]]
+title: git flow init - Using SourceTree to Initialize a Git-Flow Repository
+type: text/vnd.tiddlywiki
+
+Opens the Source Tree Graphical Client...
+I used smart-git since I'm not using apple.
+
+//And instead of using their GUI to set this up, [[found out|https://jeffkreeftmeijer.com/git-flow/]] I could use://
+
+```
+$ git flow init
+```
+
+...and get asked the same questions as the GUI about what to name the various branches...
+
+```
+
+Which branch should be used for bringing forth production releases?
+   - master
+Branch name for production releases: [master] 
+Branch name for "next release" development: [develop] 
+
+How to name your supporting branch prefixes?
+Feature branches? [feature/] 
+Bugfix branches? [bugfix/] 
+Release branches? [release/] 
+Hotfix branches? [hotfix/] 
+Support branches? [support/] 
+Version Number? []
+```
+(All of these were left at the defaults)
+

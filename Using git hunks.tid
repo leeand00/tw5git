@@ -1,0 +1,31 @@
+created: 20190106195716136
+creator: aleer
+modified: 20190106200430881
+modifier: aleer
+tags: hunks toread
+title: Using git hunks
+type: text/vnd.tiddlywiki
+
+[[link|https://www.bignerdranch.com/blog/using-git-hunks/]]
+
+As a developer, I always try to follow the "Boy Scout Principle" when it comes to the code I'm working with.  Simply put:
+
+>Always leave the code cleaner than when you found it.
+
+Based on the idea that Boy Scouts always leave a campground cleaner than when they found it.
+
+It is tempting to make sweeping changes and clean up lots of code while implementing a small new feature, however, it's also good practice to separate commits that don't include any unrelated changes.  Occasionally this means that a file that has a few small changes that clean up code, and others that are dealing with some functional changes, needs to get committed.  Luckily, git has an awesome feature that allows us to get exactly what we want: hunks.
+
+[Many of the git subcommands can be passed `--patch` or `-p` for short.  When used with `git add`, we can compose a commit with exactly the changes we want, instead of just adding whole files.  Once you hit enter, you can an interactive prompt where you're presented with a diff and a set of options.
+
+```
+diff --get a/app.coffee b/app.coffee
+index c99027a..b1e7e9b 100755
+--- a/app.coffee
++++ b/app.coffee
+@@ -10,11 +10,7 @@ app.configure ->
+        app.use express.methodOverride()
+        app.use app.router
+
+
+```

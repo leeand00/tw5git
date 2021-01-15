@@ -1,0 +1,72 @@
+created: 20190107164923286
+creator: aleer
+modified: 20190211212146875
+modifier: aleer
+tags: 
+title: The Gitflow workflow
+type: text/vnd.tiddlywiki
+
+Using the piece of software called source Tree
+
+Original work by Vincent Driessen
+
+http://nvie.com/posts/a-successful-git-branching-model/
+
+CC
+
+!Why is a workflow important?
+
+*Makes sure everyone working on the project follows the same protocol.
+*Prevents merge conflicts (not all but more of them)
+*Streamlines your process
+
+!The Gitflow workflow
+
+>Each person knows what they are working on, they're not going to go off on a tangent and work on something else on this branch.
+
+*Each person/group works in a separate branch
+*Each branch is used for one thing:
+**A new feature
+**A bug fix
+**Etc...
+*After work is finished in a branch, it is added to the main branch, and other branches as needed (i.e. `master`, `hotfix`, `release`, and `develop`)
+
+{{gitBranchGitFlow.svg.png}}
+
+*`master`
+**Holds the different versions
+*`hotfixes`
+**Stores any hotfixes we have to do for a given release.
+*`release`
+**A branch in which we prepare the next release.
+*`develop`
+**A branch which holds pretty much everything.
+**When it reaches a stable point, we can use that changeset / commit as the starting point for the next release.
+*`feature-x`
+**And then we have feature branches for developing individual features.
+*`bugfixes`
+
+<<tabs "[tag[The Gitflow workflow]sort[order]]">>
+
+[[Master Branch - The Gitflow workflow]]
+
+[[Hotfix Branch - The Gitflow workflow]]
+
+
+[[Release Branch - The Gitflow workflow]]
+
+!Develop
+
+*The develop branch holds small changes that may occur...
+**Examples:
+***Having to add a tiny bit of code to this place
+***Having to change the footer
+*Incorporates bug fixes (so we can use them in the next release, etc)
+
+-----
+
+*Also used to merge features
+**And then when you're done creating a feature, you can close a branch or delete it.
+
+And this means that you always have a branch the mimics your live or production states.
+

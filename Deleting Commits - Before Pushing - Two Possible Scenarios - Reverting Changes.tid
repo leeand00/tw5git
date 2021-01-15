@@ -1,0 +1,22 @@
+caption: DeleteCommits
+created: 20190105230204289
+creator: aleer
+modified: 20190105232052922
+modifier: aleer
+order: 0
+tags: [[Before Pushing - Two Possible Scenarios - Reverting Changes]]
+title: Deleting Commits - Before Pushing - Two Possible Scenarios - Reverting Changes
+type: text/vnd.tiddlywiki
+
+*So before pushing you are allowed to permanently delete commits.
+**It's create if you've done something that's just not useful.
+**So you can just delete the commits and it's as if they never happened.
+
+>@@color:red; ''WARNING:'' YOU CANNOT BRING THESE COMMITS BACK!@@<Br/><Br/>
+
+>''Remember:''
+>>You can use relative referencing of commits (`HEAD^`, `HEAD~3`)
+>>>`HEAD^` - References the commit before the one we're at.
+>>>`HEAD~3` - References three commits before the one we're at.
+
+<<tabs "[tag[Deleting Commits - Before Pushing - Two Possible Scenarios - Reverting Changes]sort[order]]">>

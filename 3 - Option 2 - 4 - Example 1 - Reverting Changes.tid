@@ -1,0 +1,36 @@
+caption: 3
+created: 20190106180758976
+creator: aleer
+modified: 20190106181706847
+modifier: aleer
+order: 3
+tags: [[Option 2 - 4 - Example 1 - Reverting Changes]]
+title: 3 - Option 2 - 4 - Example 1 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+```
+$ git reset HEAD^
+Unstaged changes after reset
+M       Main.java
+```
+
+*The other option is to do a `git reset HEAD^`, but //__without__// the  `--hard` option.
+**And all that does is uncommit your changes and leave them in the working directory uncommited:
+
+```
+$ git log --decorate
+commit 64253725006d93fb0696e1c9a6a6ace72410eba (HEAD -> master)
+Author: Andrew J. Leer <leeand00@hotmail.com>
+Date: Tue Nov 6 08:18:07 2018 - 0500
+
+   First commit.
+
+$ cat ./Main.java
+
+public class Main {
+   System.out.println("Hello, World");
+}
+```
+
+*There's only 1 commit, the `Main.java` file still has the changes in it from the commit we got rid of.
+**If you make a commit too quickly and you want to undo it, makes some changes and recommit, this is the command for you.

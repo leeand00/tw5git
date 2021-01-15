@@ -1,0 +1,25 @@
+caption: Debugging .gitignore files
+created: 20201226021024861
+creator: aleer
+modified: 20201226021346734
+modifier: aleer
+order: 7
+tags: gitignore
+title: Debugging .gitignore files - gitignore
+type: text/vnd.tiddlywiki
+
+!Debugging .gitignore files
+
+If you have complicated `.gitignore` patterns, or patterns spread over multiple `.gitignore` files, it can be difficult to track down why a particular file is being ignored.  You can use the `git check-ignore` command with the `-v` (or `--verbose`) option to determine which pattern is causing a particular file to be ignored:
+
+```
+$ git check-ignore -v debug.log .gitignore:3:*.log debug.log
+```
+
+The output shows:
+
+```
+ :  :   
+```
+
+You can pass multiple file names to `git check-ignore` if you like, and the names themselves don't even have to correspond to files that exist in your repository.

@@ -1,0 +1,15 @@
+caption: Intro
+order: 0
+tags: [[Reverting Changes]]
+title: Two Possible Scenarios - Reverting Changes
+
+
+#''Before''
+#*Before you have pushed changes to to remote repository.
+#**So we have made a change and haven't pushed it remotely yet.
+#''After''
+#*You have pushed the changes (someone might have done some work on these changes)
+#**Someone else may have already downloaded the changes, and thus you have to be more careful what you do. 
+
+<<tabs "[tag[Two Possible Scenarios - Reverting Changes]sort[order]]">>
+

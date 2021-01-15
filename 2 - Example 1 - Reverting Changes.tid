@@ -1,0 +1,23 @@
+caption: 2
+created: 20190106000723753
+creator: aleer
+modified: 20190106001104133
+modifier: aleer
+order: 2
+tags: [[Example 1 - Reverting Changes]]
+title: 2 - Example 1 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+```
+$ vi ./Main.java
+
+$ cat ./Main.java
+
+public class Main {
+  System.out.println("Hello, World") // This causes an error in the Java compiler and is there for a garbage commit.
+}
+
+$ commit -am "Added the first print statement"
+[master f5d89ad] Added the first print statement.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```

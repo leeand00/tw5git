@@ -1,0 +1,42 @@
+caption: 4
+created: 20190106001541540
+creator: aleer
+modified: 20190106182746999
+modifier: aleer
+order: 4
+tags: [[Example 1 - Reverting Changes]]
+title: 4 - Example 1 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+!!The difference between a hard and a soft reset<br/>(is the working directory)
+
+```
+$ git log --decorate
+
+commit f5d89adc4bba5d048864467b8e418e4b09f0c240 (HEAD -> master)
+Author: Andrew J. Leer <leeand00@hotmail.com>
+Date: Tue Nov 6 07:52:06 2018 - 0500
+ 
+   Added the first print statement.
+
+commit 64253725006d9b3fb0696e1c9a6a6ace72410eba
+Author: Andrew J. Leer <leeand00@hotmail.com>
+Date: Tue Nov 6 07:45:17 2018 - 0500
+
+   First commit.
+```
+
+*`--decorate` 
+**Shows where the `HEAD` and `master` branch are.
+
+I haven't pushed yet, so next I'm going to take this code to my teammates for a code review.
+When one of the teammates says you need to have a method around that or it's not going to work...
+
+And now I have two options:
+
+*I can do a `git reset --hard` to delete the change and get rid of the commit and get the blank line back.
+**This is the easier option, but by not having to save the commit directly and is overall just a better option if you have not pushed yet.
+**[[See the first option|Option 1 - 4 - Example 1 - Reverting Changes]]
+*Or I can `git revert HEAD^`, which adds an extra commit and deletes the changes and puts the blank line back in.
+**[[See the second option|Option 2 - 4 - Example 1 - Reverting Changes]]
+

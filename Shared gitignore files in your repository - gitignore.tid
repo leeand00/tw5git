@@ -1,0 +1,13 @@
+caption: shared .gitignore files
+created: 20201226014433581
+creator: aleer
+modified: 20201226015140324
+modifier: aleer
+order: 1
+tags: gitignore
+title: Shared gitignore files in your repository - gitignore
+type: text/vnd.tiddlywiki
+
+!Shared .gitignore files in your repository.
+
+Git ignore rules are usually defined in a `.gitignore` file at the root of your repository.  However, you can choose to define multiple `.gitignore` files in different directories in your repository.  Each pattern in a particular `.gitignore` file is tested relative to the directory containing that file.  However the convention, and simplest approach, is to define a single `.gitignore` file in the root.  As your `.gitignore` file is checked in, it is versionedlike any other file in your repository and shared with your teammates when you push.  Typically you should only include patterns in `.gitignore` that will benefit other users of the repository.

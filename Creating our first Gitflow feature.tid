@@ -1,0 +1,66 @@
+caption: 2
+created: 20190112011022015
+creator: aleer
+modified: 20190113041935832
+modifier: aleer
+order: 2
+tags: [[Gitflow and Source Tree]]
+title: Creating our first Gitflow feature
+type: text/vnd.tiddlywiki
+
+!2. Creating our first Gitflow feature
+
+>''Remember:''  It's going to be `feature/<feature name>` when it's a branch.
+
+//In the example we're going to add a feature called `user_input` that will request input from a user and write it back the the screen.  In a large program you can call it whatever you want to describe the feature you're adding.//
+
+!!Using Source Tree to create a feature
+
+
+<<tabs "[tag[Using Source Tree to create a feature - Creating our first Gitflow feature]sort[order]]">>
+
+<!--
+[[1 - Using Source Tree to create a feature - Creating our first Gitflow feature]]
+
+----
+
+[[2 - Using Source Tree to create a feature - Creating our first Gitflow feature]]
+
+----
+
+[[3 - Using Source Tree to create a feature - Creating our first Gitflow feature]]
+-->
+1 - Using gitflow bash - Creating our first Gitflow feature
+
+!!Using gitflow bash:
+
+<<tabs "[tag[Using gitflow bash - Creating our first Gitflow feature]sort[order]]">>
+
+<!-- 
+[[1 - Using gitflow bash - Creating our first Gitflow feature]]
+----
+
+[[2 - Using gitflow bash - Creating our first Gitflow feature]]
+----
+
+[[3 - Using gitflow bash - Creating our first Gitflow feature]]
+
+----
+
+[[4 - Using gitflow bash - Creating our first Gitflow feature]]
+
+----
+
+[[5 - Using gitflow bash - Creating our first Gitflow feature]]
+----
+
+[[6 - Using gitflow bash - Creating our first Gitflow feature]]
+
+----
+
+[[7 - Using gitflow bash - Creating our first Gitflow feature]]
+----
+
+[[8 - Using gitflow bash - Creating our first Gitflow feature]]
+
+-->

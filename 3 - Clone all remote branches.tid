@@ -1,0 +1,19 @@
+created: 20200408171217825
+creator: aleer
+modified: 20200408171532546
+modifier: aleer
+tags: [[Clone all remote branches]]
+title: 3 - Clone all remote branches
+type: text/vnd.tiddlywiki
+
+
+```bash
+$ git branch -a
+* master
+  remotes/origin/HEAD
+  remotes/origin/master
+  remotes/origin/v1.0-stable
+  remotes/origin/experimental
+```
+
+But there are other branches hiding in your repository!  You can see them using the `-a` flag:

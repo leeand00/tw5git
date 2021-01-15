@@ -1,0 +1,14 @@
+caption: 3
+created: 20190111155356203
+creator: aleer
+modified: 20190112001859832
+modifier: aleer
+order: 3
+tags: [[Using SourceTree to Initialize a Git-Flow Repository]]
+title: 3 - Using SourceTree to Initialize a Git-Flow Repository
+type: text/vnd.tiddlywiki
+
+```
+$ git branch
+* master
+```

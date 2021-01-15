@@ -1,0 +1,15 @@
+created: 20200512214935662
+creator: aleer
+draft.of: New Tiddler
+draft.title: gitea setup
+modified: 20200512215343462
+modifier: aleer
+tags: 
+title: Draft of 'New Tiddler' by aleer
+type: text/vnd.tiddlywiki
+
+```
+echo "https://storage.googleapis.com/golang/go1.10.1.linux-arm64.tar.gz" > ./test
+sudo apt install curl openssh-server ca-certificates postfix apt-transport-https
+curl https://packages.gitlab.com/
+```

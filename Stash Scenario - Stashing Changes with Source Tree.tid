@@ -1,0 +1,94 @@
+caption: 1 - Stash Scenario
+created: 20190113155243067
+creator: aleer
+modified: 20190113160956622
+modifier: aleer
+order: 1
+tags: [[Stashing Changes with Source Tree]]
+title: Stash Scenario - Stashing Changes with Source Tree
+type: text/vnd.tiddlywiki
+
+!!Stash Scenario <br/>(i.e. when you'd use stash)
+
+#I've [[created a new feature|Creating our first Gitflow feature]]:
+#*`$ git flow feature start user_input_javadoc` 
+#Added Java doc to class:
+
+```
+$ vi ./Main.java
+$ cat ./Main.java
+import java.util.Scanner;
+/**
+ * Class to ask the user for their name and print it back to them.
+ * Great feature, huh?
+ */
+public class Main {
+   public static void main(String args[]) {
+       Scanner scan = new Scanner(System.in);
+       System.out.println("Enter your name: ");
+       String name = scan.nextLine();
+       System.out.println("Your name is: " + name); 
+   }
+}
+```
+
+#committed the changes:
+#*`$ git add ./Main.java`
+#*`$ git commit -m "Added class javadoc.  This is hard work"`
+
+---
+
+Now what I'm going to do is add an additional bit of Java Documentation onto this class.
+
+```
+$ vi ./Main.java
+$ cat ./Main.java
+import java.util.Scanner;
+/**
+ * Class to ask the user for their name and print it back to them.
+ * Great feature, huh?
+ */
+public class Main {
+   /**
+    * Method to implement what the class does.
+    * @param args: system arguments are unused.
+    * TODO: finish writing documentation.
+    */
+   public static void main(String args[]) {
+       Scanner scan = new Scanner(System.in);
+       System.out.println("Enter your name: ");
+       String name = scan.nextLine();
+       System.out.println("Your name is: " + name); 
+   }
+}
+```
+
+but, I'm not going to commit it...I'm going to leave it in there as an uncommited change.
+
+```
+$$ git status
+On branch feature/user_input_javadoc
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Main.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+So let's say you're coding and you decide that you need to go back and change something on the `develop` branch...if you try to check it out (and you have modified changes, you'll get the following error:
+
+```
+$ git checkout develop
+error: Your local changes to the following files would be overwritten by checkout:
+	Main.java
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+```
+
+And we don't want to commit this change because it's unfinished.  So if we want to jump to the development branch to fix something, but we also don't want to lose the changes we're currently working on, we need to do a stash.
+
+And if you don't know what a stash is, a stash is a secret store for something.
+
+And if you use the terminal stashing is quite secret.

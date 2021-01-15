@@ -1,0 +1,20 @@
+caption: 3
+created: 20190106005128573
+creator: aleer
+modified: 20190106005308129
+modifier: aleer
+order: 3
+tags: [[Option 1 - 4 - Example 1 - Reverting Changes]]
+title: 3 - Option 1 - 4 - Example 1 - Reverting Changes 1
+type: text/vnd.tiddlywiki
+
+```
+$ cat ./Main.java
+
+public class Main {
+
+}
+```
+
+*And the garbage changes that we made are gone.
+**@@color: red; __BUT THERE IS NO WAY TO RECOVER THAT COMMIT!__@@

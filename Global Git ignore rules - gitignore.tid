@@ -1,0 +1,20 @@
+caption: Global .gitignore
+created: 20201226015539001
+creator: aleer
+modified: 20201226020009664
+modifier: aleer
+order: 4
+tags: gitignore
+title: Global Git ignore rules - gitignore
+type: text/vnd.tiddlywiki
+
+!Global Git ignore rules
+
+In addition, you can define global Git ignore patterns for all repositories on your local system by setting the Git `core.excludesFile` property.  You'll have to create this file yourself.  If you're unsure where to put your global `.gitignore` file, you home directory (`~`) isn't a bad choice (and makes it easy to find later).  Once you've created the file, you'll need to configure its location with `git config`:
+
+```
+$ touch ~/.gitignore
+$ git config --global core.excludesFile ~/.gitignore
+```
+
+You should be careful what patterns you choose to globally ignore, as different file types are relevant for different projects.  Special operating system files (e.g. `.DS_Store` and `thumbs.db`) or temporary files created by some developer tools are typical candidates for ignoring globally.

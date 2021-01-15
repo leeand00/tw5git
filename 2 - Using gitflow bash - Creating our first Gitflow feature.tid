@@ -1,0 +1,18 @@
+caption: 2
+created: 20190112225227670
+creator: aleer
+modified: 20190112231046876
+modifier: aleer
+order: 2
+tags: [[Using gitflow bash - Creating our first Gitflow feature]]
+title: 2 - Using gitflow bash - Creating our first Gitflow feature
+type: text/vnd.tiddlywiki
+
+```
+$ git branch
+  develop
+* feature/user_input
+  master
+```
+
+*This results in a branch that looks like above

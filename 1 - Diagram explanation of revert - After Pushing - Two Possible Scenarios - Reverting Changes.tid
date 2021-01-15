@@ -1,0 +1,21 @@
+caption: 1
+created: 20190105232558807
+creator: aleer
+modified: 20190105233830046
+modifier: aleer
+order: 1
+tags: [[Diagram explanation of revert - After Pushing - Two Possible Scenarios - Reverting Changes]]
+title: 1 - Diagram explanation of revert - After Pushing - Two Possible Scenarios - Reverting Changes
+type: text/vnd.tiddlywiki
+
+```
+                       C0
+                       / \
+                        |
+                       C1
+                       / \
+                        |
+                master  C2
+```
+
+*We've got our `master` branch.

@@ -1,0 +1,14 @@
+caption: 8
+created: 20190112230357445
+creator: aleer
+modified: 20190112231328871
+modifier: aleer
+order: 8
+tags: [[Using gitflow bash - Creating our first Gitflow feature]]
+title: 8 - Using gitflow bash - Creating our first Gitflow feature
+type: text/vnd.tiddlywiki
+
+```
+$ git add ./Main.java
+$ git commit -m "Finished adding user input and printing back of their name."
+```

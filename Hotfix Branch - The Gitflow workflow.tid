@@ -1,0 +1,16 @@
+caption: hotfix
+created: 20190111135938543
+creator: aleer
+modified: 20190113162422296
+modifier: aleer
+tags: [[The Gitflow workflow]]
+title: Hotfix Branch - The Gitflow workflow
+type: text/vnd.tiddlywiki
+
+!Hotfix Branch
+
+Hotfix means correcting a small bug on a production release.
+
+And so what you do is fix the issue in the hotfix and then merge it back into the master branch and increase the version number.
+
+*Usually when we do a hotfix, we go from version `0.1` to `0.2` but when we do a major release we go from `0.1` to `1.0`

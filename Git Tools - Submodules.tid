@@ -1,0 +1,16 @@
+created: 20200514190940982
+creator: aleer
+modified: 20200514192047160
+modifier: aleer
+tags: documentation
+title: Git Tools - Submodules
+type: text/vnd.tiddlywiki
+
+[[link|https://git-scm.com/book/en/v2/Git-Tools-Submodules]]
+
+>''NOTE:'' I started reading this because I determined that this would be important for correctly storing my .dotfiles checkout for multiple projects that might have related settings; or for something like fwknopd where there is a server configuration and a client configuration, but the two go together and would need to be checked out in the same change sets for each when they were both in that state in order to work correctly.
+
+!Git Tools - Submodules
+
+It often happens that while working on one project, you need to use another project from within it.  Perhaps it's a library that a third party developed or that you're developing separately and using in multiple parent projects 
+

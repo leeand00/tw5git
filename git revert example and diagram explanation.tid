@@ -1,0 +1,16 @@
+caption: git-revert
+created: 20190106190447795
+creator: aleer
+modified: 20190106195204575
+modifier: aleer
+tags: [[Undoing commits]]
+title: git revert example and diagram explanation
+type: text/vnd.tiddlywiki
+
+<<tabs "[tag[git-revert]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>
+
+<!--
+[[Example 2 - Reverting Changes]]
+
+[[Diagram explanation of revert - After Pushing - Two Possible Scenarios - Reverting Changes]]
+-->

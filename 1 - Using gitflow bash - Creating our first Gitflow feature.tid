@@ -1,0 +1,16 @@
+caption: 1
+created: 20190112225200379
+creator: aleer
+modified: 20190112230758616
+modifier: aleer
+order: 1
+tags: [[Using gitflow bash - Creating our first Gitflow feature]]
+title: 1 - Using gitflow bash - Creating our first Gitflow feature
+type: text/vnd.tiddlywiki
+
+```
+$ git flow feature start user_input develop
+```
+
+*Where `user_input` is the feature name.
+*Where `develop` is the branch to add the feature on to, or the commit to branch the feature branch from.

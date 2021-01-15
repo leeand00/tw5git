@@ -1,0 +1,17 @@
+caption: 2
+created: 20190105231207474
+creator: aleer
+modified: 20190105231234966
+modifier: aleer
+order: 2
+tags: [[Diagram Explanation of Reset - Deleting Commits - Before Pushing - Two Possible Scenarios - Reverting Changes]]
+title: 2 - Diagram Explanation of Reset - Deleting Commits - Before Pushing - Two Possible Scenarios - Reverting Changes
+type: text/vnd.tiddlywiki
+
+```
+                          C0
+                          /\
+                           |
+                   master C1
+```
+*If we do `git reset HEAD~2` and we get the above^

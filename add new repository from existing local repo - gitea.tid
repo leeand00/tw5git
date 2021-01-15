@@ -1,0 +1,50 @@
+created: 20200326141607682
+creator: aleer
+modified: 20200326154233184
+modifier: aleer
+tags: gitea
+title: add new repository from existing local repo - gitea
+type: text/vnd.tiddlywiki
+
+>''Prerequisite:'' If you aren't already connected, you won't be able to do this, so follow [[access - gitea]] first.
+
+#Make sure everything in your repo / branches that you want to push is committed, rebased etc..
+#*Make sure none of your commits are sending any passwords or anything, you may need to rebase to remove such things; consider placing these sorts of sensitive information in a properties (java) file or something similar and make sure that it is listed in .gitignore so that it doesn't end up in the repo itself.
+#In gitea click the `+` to create a new repository.
+##You will see the following screen:
+##*{{NewRepoGitea.png}}
+##**Fill everything out and at the bottom click `Create Repository`
+#Next you'll get a window like this:
+#*{{giteaHTTP_over_SSH_URL.png}}
+#**Copy the highlighted text and change the port number to the `$local_ssh_proxy_port` variable that we used when getting access to the system ([[access - gitea]]).
+#***''Example:''
+#****If your URL that you copied was `http://127.0.0.1:3000/helpdeskaleer/win-pwrsh-dns-update.git` you should change it to `http://127.0.0.1:$local_ssh_proxy_port/helpdeskaleer/win-pwrsh-dns-update.git`, in this example it would be `http://127.0.0.1:8080/helpdeskaleer/win-pwrsh-dns-update.git`
+#****Store the resulting value in a variable like `gitea_win_pwrsh_dns_update_remote=http://127.0.0.1:$local_ssh_proxy_port/helpdeskaleer/win-pwrsh-dns-update.git` in your shell.
+#Also from your shell / local repo then type the following to add a remote
+#*`git remote add gitea $gitea_win_pwrsh_dns_update_remote`
+#Then check to see that it was added okay
+#*`git remote -v`
+#Before proceeding with the loop below to push all the branches be sure to set your credentials here or you'll have to type them a bunch of times:
+##vi ~/.netrc
+```
+machine 127.0.0.1
+        login helpdeskaleer
+        password MyFnPassword
+```
+#List all the branches and for each branch run  the following command:
+#*`for x in $(git branch | sed -e 's/^[ \*]\+//' | tr '\n' ' '); do git push -u gitea $x; done`
+#If you'd rather only push one branch at a time you can do the following:
+#`git push -u gitea <branch-name>`
+
+#You'll be looking for output like this:
+
+```
+Username for 'http://127.0.0.1:8080': helpdeskaleer
+Password for 'http://helpdeskaleer@127.0.0.1:8080':
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 236 bytes | 29.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To http://127.0.0.1:8080/HCPN/win-10-schd-task-run-once.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'gitea'.
+```

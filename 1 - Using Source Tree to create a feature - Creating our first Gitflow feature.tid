@@ -1,0 +1,17 @@
+caption: 1
+created: 20190112225008422
+creator: aleer
+modified: 20190113041640350
+modifier: aleer
+order: 1
+tags: [[Using Source Tree to create a feature - Creating our first Gitflow feature]]
+title: 1 - Using Source Tree to create a feature - Creating our first Gitflow feature
+type: text/vnd.tiddlywiki
+
+#Click `Git Flow -> Feature`
+#In the resulting dialog:
+##In the `Feature Name:` text box
+##*''Example:'' `user_input`
+##In the `Start at:` radio select `Latest development branch`
+##Click `Ok`
+#When we click `Ok` we have a new `feature/user_input` that's been added to the tree.

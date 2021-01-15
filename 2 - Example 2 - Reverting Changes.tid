@@ -1,0 +1,15 @@
+caption: 2
+created: 20190106184444154
+creator: aleer
+modified: 20190106190046132
+modifier: aleer
+order: 2
+tags: [[Example 2 - Reverting Changes]]
+title: 2 - Example 2 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+```
+$ git revert HEAD
+```
+
+*If we wanted to revert the latest and previous commit we would use `HEAD^`, but that's not what were doing here.

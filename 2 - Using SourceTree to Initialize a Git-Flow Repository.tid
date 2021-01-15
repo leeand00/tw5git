@@ -1,0 +1,21 @@
+caption: 2
+created: 20190111154338521
+creator: aleer
+modified: 20190111154359896
+modifier: aleer
+order: 2
+tags: [[Using SourceTree to Initialize a Git-Flow Repository]]
+title: 2 - Using SourceTree to Initialize a Git-Flow Repository
+type: text/vnd.tiddlywiki
+
+```
+# Assuming they created a .gitingore file up here some where...
+$ git add .gitignore
+$ git -m "Added .gitignore"
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+$ 
+```
+
+*Some problems can occur if we don't add the first commit, so we have to create the first commit before using gitflow.
+*So I'm going to add our `.gitignore` file, just so we have our first commit.

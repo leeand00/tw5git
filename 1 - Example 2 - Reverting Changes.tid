@@ -1,0 +1,26 @@
+caption: 1
+created: 20190106184237383
+creator: aleer
+modified: 20190106184327201
+modifier: aleer
+order: 1
+tags: [[Example 2 - Reverting Changes]]
+title: 1 - Example 2 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+```
+$ git log --decorate
+commit 67d1f274d6ecbe504341b6622be713511e399ecb (HEAD -> master)
+Author: Andrew J. Leer <leeand00@hotmail.com>
+Date:   Tue Nov 6 11:45:12 2018 -0500
+
+    Added the first print statement
+
+commit 64253725006d9b3f0696e1c9a6a6ace72410eba
+Author: Andrew J. Leer <leeand00@hotmail.com>
+Date:   Tue Nov 6 07:45:17 2018 -0500
+    
+    First commit.
+```
+
+*So there are two commits again...

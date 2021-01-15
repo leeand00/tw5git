@@ -1,0 +1,26 @@
+caption: 1
+created: 20190106000549695
+creator: aleer
+modified: 20190106000713858
+modifier: aleer
+order: 1
+tags: [[Example 1 - Reverting Changes]]
+title: 1 - Example 1 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+```
+$ git branch 
+*master
+$ git log
+commit 64253725006d9b3fb0696e1c9a6a6ace72410eba
+Author: Andrew J. Leer: <leeand00@hotmail.com>
+Date:     Tues Nov 6 07:45:17 2018 - 0500
+
+     First commit.
+
+$ cat ./Main.java
+
+public class Main {
+
+}
+```

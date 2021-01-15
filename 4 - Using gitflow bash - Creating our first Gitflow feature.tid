@@ -1,0 +1,15 @@
+caption: 4
+created: 20190112225422276
+creator: aleer
+modified: 20190112231014056
+modifier: aleer
+order: 4
+tags: [[Using gitflow bash - Creating our first Gitflow feature]]
+title: 4 - Using gitflow bash - Creating our first Gitflow feature
+type: text/vnd.tiddlywiki
+
+```
+$ git add ./Main.java
+```
+
+*Added the changes to the index.

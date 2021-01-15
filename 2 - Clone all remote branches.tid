@@ -1,0 +1,15 @@
+created: 20200408170855566
+creator: aleer
+modified: 20200408171517854
+modifier: aleer
+tags: [[Clone all remote branches]]
+title: 2 - Clone all remote branches
+type: text/vnd.tiddlywiki
+
+
+```bash
+$ git branch
+* master
+```
+
+Next, look at the local branches in your repository

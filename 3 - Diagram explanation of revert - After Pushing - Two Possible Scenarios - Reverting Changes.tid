@@ -1,0 +1,28 @@
+caption: 3
+created: 20190105233841201
+creator: aleer
+modified: 20190105235207284
+modifier: aleer
+order: 3
+tags: [[Diagram explanation of revert - After Pushing - Two Possible Scenarios - Reverting Changes]]
+title: 3 - Diagram explanation of revert - After Pushing - Two Possible Scenarios - Reverting Changes
+type: text/vnd.tiddlywiki
+
+```
+                       C0
+                       / \
+                        |
+                       C1
+                       / \
+                        |
+                       C2  git revert HEAD^
+                       / \
+                        |
+                master C3
+```
+
+*And what it makes is a new commit which is the opposite of `C1`,
+**So if `C1` added 3 lines of code, `C3` deletes those same 3 lines of code.
+*And then if we re-revert `C3` that would add those 3 line again.
+
+So that gives us a bit more freedom.

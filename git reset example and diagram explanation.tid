@@ -1,0 +1,14 @@
+caption: git-reset
+created: 20190106191357694
+creator: aleer
+modified: 20190106195510865
+modifier: aleer
+tags: [[Undoing commits]]
+title: git reset example and diagram explanation
+type: text/vnd.tiddlywiki
+
+<<tabs "[tag[git-reset]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>
+
+<!--
+[[Example 1 - Reverting Changes]]
+-->

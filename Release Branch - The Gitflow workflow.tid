@@ -1,0 +1,16 @@
+caption: Release Branch
+created: 20190111140008340
+creator: aleer
+modified: 20190116065300596
+modifier: aleer
+tags: [[The Gitflow workflow]]
+title: Release Branch - The Gitflow workflow
+type: text/vnd.tiddlywiki
+
+!Release Branch
+
+*This branch is used to prepare for a major release (in the `master` branch).
+
+So before we create `1.0` we want to do any testing, any minor tweaks or bug fixes and for this we use the release branch.
+
+In the drawing...the Start of `1.0` on the blue circles, the one at the top is listed as `1.0`

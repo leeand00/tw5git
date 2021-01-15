@@ -1,0 +1,16 @@
+created: 20200513192536928
+creator: aleer
+modified: 20200514002426047
+modifier: aleer
+tags: [[Setup Gitea on Raspberry Pi 3]]
+title: Install and setup nginx with ssl - Setup Gitea on Raspberry Pi 3
+type: text/vnd.tiddlywiki
+
+[[Install nginx - Install and setup nginx with ssl - Setup Gitea on Raspberry Pi 3]]
+
+[[Configure nginx - Install and setup nginx with ssl - Setup Gitea on Raspberry Pi 3]]
+
+[[Create SSL Certificates - Install and setup nginx with ssl - Setup Gitea on Raspberry Pi 3]]
+
+[[Enable Gitea Nginx-Site - Install and setup nginx with ssl - Setup Gitea on Raspberry Pi 3]]
+

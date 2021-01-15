@@ -1,0 +1,23 @@
+created: 20200513185810668
+creator: aleer
+modified: 20200513185810856
+modifier: aleer
+tags: [[Setup Gitea on Raspberry Pi 3]]
+title: Setup Raspberry PI with minimal Raspbian image - Setup Gitea on Raspberry Pi 3
+type: text/vnd.tiddlywiki
+
+!Setup Raspberry PI with minimal Raspbian image
+
+Setup Raspberry PI with minimal Raspbian image.  You need to connect to the HDMI port and set the following:
+
+```
+sudo raspi-config
+```
+
+There you need to enable SSH server and you should change the hostname.
+
+Then configure the correct timezone:
+
+```
+sudo dpkg-reconfigure tzdata
+```

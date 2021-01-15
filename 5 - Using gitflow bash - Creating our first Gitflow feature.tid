@@ -1,0 +1,13 @@
+caption: 5
+created: 20190112230215643
+creator: aleer
+modified: 20190112231120572
+modifier: aleer
+order: 5
+tags: [[Using gitflow bash - Creating our first Gitflow feature]]
+title: 5 - Using gitflow bash - Creating our first Gitflow feature
+type: text/vnd.tiddlywiki
+
+```
+$ git commit -m "Added the class that will contain the feature."
+```

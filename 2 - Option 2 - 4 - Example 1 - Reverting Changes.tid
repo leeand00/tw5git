@@ -1,0 +1,25 @@
+caption: 2
+created: 20190106005726894
+creator: aleer
+modified: 20190106181219138
+modifier: aleer
+order: 2
+tags: [[Option 2 - 4 - Example 1 - Reverting Changes]]
+title: 2 - Option 2 - 4 - Example 1 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+```
+git log --decorate
+commit bc71e971b5eac7ea8ac8a7d53e43cdcf6ed079f (HEAD -> master)
+Author: Andrew J. Leer <leeand00@hotmail.com>
+Date: Tue Nov 6 08:18:07 2018 - 0500
+
+   Added the first print statement
+
+commit 64253725006d93fb0696e1c9a6a6ace72410eba
+Author: Andrew J. Leer <leeand00@hotmail.com>
+Date: Tue Nov 6 08:18:07 2018 - 0500
+
+   First commit.
+
+```

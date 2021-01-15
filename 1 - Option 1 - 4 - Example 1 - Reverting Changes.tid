@@ -1,0 +1,20 @@
+caption: 1
+created: 20190106004445712
+creator: aleer
+modified: 20190106004727782
+modifier: aleer
+order: 1
+tags: [[Option 1 - 4 - Example 1 - Reverting Changes]]
+title: 1 - Option 1 - 4 - Example 1 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+So in order to the first option, I'm going to do a `git reset --hard`
+
+```
+$ git reset --hard HEAD^
+HEAD is now at 6435327 First commit.
+```
+
+*So this is going to go back by one commit (`HEAD^`)
+**It's going to delete all the changes that were in the most recent commit.
+***(This is the most recent one is the `Added the first print statement` commit)

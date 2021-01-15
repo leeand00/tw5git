@@ -1,0 +1,16 @@
+caption: git-reset-cmd
+created: 20190106000046778
+creator: aleer
+modified: 20190106195451690
+modifier: aleer
+order: 2
+tags: git-reset
+title: Example 1 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+!git reset  cmd
+<<tabs "[tag[Example 1 - Reverting Changes]sort[order]]">>
+
+<!--
+[[1 - Example 1 - Reverting Changes]]
+-->

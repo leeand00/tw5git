@@ -1,0 +1,42 @@
+created: 20200904001953324
+creator: aleer
+modified: 20200904003648992
+modifier: aleer
+tags: 
+title: The Potential Audience of a Commit Message
+type: text/vnd.tiddlywiki
+
+[[link|https://softwareengineering.stackexchange.com/questions/414750/who-is-the-potential-audience-of-a-commit-message]]
+
+!Who is the potential audience of a commit message?
+
+!!Question
+
+I've been taking a course on [[plain language writing]], in order to make my commit messages more readable and understandable.
+
+One of the main ideas in plain language writing is that you first identify who your audience is; how do I do this, and what are the usual potential audiences reading commit messages?
+
+---
+
+!!Answers
+
+There can be several potential readers with different expectations:
+
+#''[[Reviewer|Reviewer]] ''
+##A [[reviewer|Reviewer]]  going over your code will read the commit message for context and to understand the rational for the new code.
+#''Your Team''
+##(and that includes you) using `git blame` or similar tools to understand when and why was a particular change introduced into the code base, either when:
+##*Investigating a bug 
+##*When refactoring code 
+##*When changing functionality.
+#''Release Notes''
+#*Commit messages are often aggregated to form release notes for a particular build or version.
+#**For internal products (say, a component of a cloud service)
+#***These release notes might be directly derived from the commit messages. 
+#**For products delivered directly to a customer
+#***The commit messages might form the raw input from which the product team builds the "formal" release notes.
+#[[Release Manager]]
+##These commit messages might be read by a [[Release Manager]] to assess the riskiness or relevance of a release
+##*For instance, to know if the given commits comprising of a release mean that feature P, that was promised to a customer, is now ready for beta testing at customer site T.
+#DevOps
+#*Commit messages aggregated for a given release might be read by DevOps to determine which change in a release might have caused an error or degradation in production.

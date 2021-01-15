@@ -1,0 +1,15 @@
+caption: Personal .gitignore
+created: 20201226015201342
+creator: aleer
+modified: 20201226015453600
+modifier: aleer
+order: 2
+tags: gitignore
+title: Personal Git ignore rules - gitignore
+type: text/vnd.tiddlywiki
+
+!Personal Git ignore rules
+
+You can also define personal ignore patterns for a particular repository in a special file at `.git/info/exclude`.  These are not versioned, and not distributed with your repository, so it's an appropriate place to include patterns that will likely only benefit you.  
+
+For example, if you have a custom logging setup, or special development tools that produce files in your repository's working directory, you could consider adding them to `.git/info/exclude` to prevent them from being accidentally committed to your repository.

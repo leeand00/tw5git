@@ -1,0 +1,22 @@
+created: 20190106194034329
+creator: aleer
+modified: 20190106195137250
+modifier: aleer
+tags: 
+title: Undoing commits
+type: text/vnd.tiddlywiki
+
+```
+<Double-Check-This>
+```
+Below is how you do a reset and revert, but remember, if you have already pushed your changes, you SHOULD NOT `git reset`!!!
+
+But!  If you havent pushed your changes, you should almost always revert, so that you have a history to know what happened.
+
+So, basically 'git revert' is two actions (commits/logs) the net result of which are 0 new lines.  So that I don't lose the changes that I didn't want in my repo.
+
+```
+</Double-Check-This>
+```
+
+<<tabs "[tag[Undoing commits]sort[order]]">>

@@ -1,0 +1,17 @@
+caption: git-revert-cmd
+created: 20190106183345186
+creator: aleer
+modified: 20190106195108233
+modifier: aleer
+order: 2
+tags: git-revert
+title: Example 2 - Reverting Changes
+type: text/vnd.tiddlywiki
+
+Now I'm going to show you how to `git revert`
+
+<<tabs "[tag[Example 2 - Reverting Changes]sort[order]]">>
+
+<!--
+[[1 - Example 2 - Reverting Changes]]
+-->

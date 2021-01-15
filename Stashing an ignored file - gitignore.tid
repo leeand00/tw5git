@@ -1,0 +1,13 @@
+caption: Stashing an ignored file
+created: 20201226020601934
+creator: aleer
+modified: 20201226021436205
+modifier: aleer
+order: 7
+tags: gitignore
+title: Stashing an ignored file - gitignore
+type: text/vnd.tiddlywiki
+
+!Stashing an ignored file
+
+`git stash` is a powerful Git feature for temporarily shelving and reverting local changes, allowing you to re-apply them later on.  As you'd expect, by default `git stash` ignores ignored files and only stashes changes to file that are tracked by Git.  However, you can invoke [[git stash with the --all option|]] to stash changes to ignored and untracked files as well.

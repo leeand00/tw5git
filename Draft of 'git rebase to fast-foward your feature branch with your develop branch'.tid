@@ -1,0 +1,17 @@
+created: 20191023004535218
+creator: aleer
+draft.of: git rebase to fast-foward your feature branch with your develop branch
+draft.title: git rebase to fast-foward your feature branch with your develop branch
+modified: 20191023015955776
+modifier: aleer
+tags: 
+title: Draft of 'git rebase to fast-foward your feature branch with your develop branch'
+type: text/vnd.tiddlywiki
+
+Development is give and take, and sometimes your team mates will merge to a branch (like develop) and you'll be behind them, and other times you'll merge a branch (develop) and they'll be behind you.  
+
+Either way, both of you will at some point need to pull in the changes from the develop branch back into your feature branch to get it caught up with everybody else.
+
+`git flow feature start`
+meanwhile on another branch someone will...`git flow feature finish -k` 
+

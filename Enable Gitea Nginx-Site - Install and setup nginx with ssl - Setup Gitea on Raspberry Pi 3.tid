@@ -1,0 +1,15 @@
+created: 20200514002354068
+creator: aleer
+modified: 20200514002354235
+modifier: aleer
+tags: [[Install and setup nginx with ssl - Setup Gitea on Raspberry Pi 3]]
+title: Enable Gitea Nginx-Site - Install and setup nginx with ssl - Setup Gitea on Raspberry Pi 3
+type: text/vnd.tiddlywiki
+
+Then enable the gitea nginx-site and restart the nginx server:
+
+```
+sudo ln -s /etc/nginx/sites-available/gitea /etc/nginx/sites-enabled/gitea
+sudo rm /etc/nginx/sites-enabled/default
+sudo service nginx restart
+```

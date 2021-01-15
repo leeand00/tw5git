@@ -1,0 +1,19 @@
+caption: 3
+created: 20190112225112753
+creator: aleer
+modified: 20190113041854699
+modifier: aleer
+order: 3
+tags: [[Using Source Tree to create a feature - Creating our first Gitflow feature]]
+title: 3 - Using Source Tree to create a feature - Creating our first Gitflow feature
+type: text/vnd.tiddlywiki
+
+```
+$ vi Main.java
+```
+*I'm going to add some code...
+
+
+{{WrkingDirAdded.png}}
+
+*And now it's got changes in the directory.

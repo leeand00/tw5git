@@ -1,0 +1,28 @@
+created: 20200325201727356
+creator: aleer
+modified: 20200325202617452
+modifier: aleer
+tags: gitea
+title: access - gitea
+type: text/vnd.tiddlywiki
+
+From your local terminal...
+
+```
+# Do this first...
+gitea_ssh_port=22
+gitea_ssh_user=pi
+gitea_ip=192.168.1.164
+local_ssh_proxy_port=8080
+remote_loopback_bound_ip=127.0.0.1
+remote_loopback_port=3000
+sudo ssh -vvv $gitea_ssh_user@$gitea_ip -L$local_ssh_proxy_port:$remote_loopback_bound_ip:$remote_loopback_port -N -p $gitea_ssh_port
+# Type your password twice...
+
+# sudo ssh -vvv pi@192.168.1.164 -L8080:127.0.0.1:3000 -N -p 22
+```
+
+In your browser go to http://127.0.0.1:8080/ Gitea should appear.
+
+{{gitea_local.png}}
+

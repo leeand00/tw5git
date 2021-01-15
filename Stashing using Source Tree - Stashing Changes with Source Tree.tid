@@ -1,0 +1,100 @@
+caption: 2 - Stash
+created: 20190113155339972
+creator: aleer
+modified: 20190113161038147
+modifier: aleer
+order: 2
+tags: [[Stashing Changes with Source Tree]]
+title: Stashing using Source Tree - Stashing Changes with Source Tree
+type: text/vnd.tiddlywiki
+
+!!Stashing using Source Tree
+
+#Select the file(s) you want to stash using the CTRL+Click method to select multiple files.
+#Click the `Stash` button
+#A dialog will appear, and you can optionally set a `message`, or optionally `keep staged changes`.
+##''Message: '' `Unfinished javadoc on Main.java`
+##Click `OK`
+
+And then they delete a colon in ./Main.java from the `develop` branch.
+
+{{prestashRestore.png}}
+
+----
+
+Switch to the `user_input_javadoc` branch by clicking on it.
+
+Right click the stash we created and click `Apply` from the context menu.
+
+And that recreates the uncommited changes from the branch.
+
+!!Stashing using git bash
+
+```
+$ git stash save -u -a "Unfinished javadoc on Main.java"
+Saved working directory and index state On feature/user_input_javadoc: Unfinished javadoc on Main.java
+HEAD is now at 5d6db67 Added class javadoc. This is hard work
+leeand00@puppetmaster:~/Documents/git-course/proj$ git stash list
+stash@{0}: On feature/user_input_javadoc: Unfinished javadoc on Main.java
+```
+
+*`-u` - Include untracked files
+*`-a` - Include all files
+*`<message>` the message to identify the stash, which you can find again with `git stash list`
+
+----
+
+''Edited''
+
+```
+$ git checkout develop
+$ vi ./Main.java
+$ cat ./Main.java
+
+import java.util.Scanner;
+/**
+ * Class to ask the user for their name and print it back to them.
+ * Great feature, huh?
+ */
+public class Main {
+   /**
+    * Method to implement what the class does.
+    * @param args: system arguments are unused.
+    * TODO: finish writing documentation.
+    */
+   public static void main(String args[]) {
+       Scanner scan = new Scanner(System.in);
+       System.out.println("Enter your name: ");
+       String name = scan.nextLine();
+       System.out.println("Your name is " + name); 
+   }
+}
+
+$ # Note the missing colon
+$ git add ./Main.java
+$ git commit -m "Deleted a colon because it detracts from user experience!"
+```
+
+{{prestashRestore.png}}
+
+----
+
+```
+$ git checkout feature/user_input_javadoc 
+Switched to branch 'feature/user_input_javadoc'
+```
+
+*To switch back to the `user_input_javadoc` branch.
+
+----
+
+```
+$ git stash list
+stash@{0}: On feature/user_input_javadoc: Unfinished javadoc on Main.java
+$ git stash apply stash@{0}
+```
+
+*To apply the uncommited changes back to the working directory.
+**Note: `git shash pop` will work here too, if you want to ditch the stash after applying it.
+
+{{StashApply.png}}
