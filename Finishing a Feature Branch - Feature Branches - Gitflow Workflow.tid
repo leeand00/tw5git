@@ -1,0 +1,27 @@
+caption: Finish Feature Branch
+created: 20210116014006117
+creator: aleer
+modified: 20210116014326575
+modifier: aleer
+order: 1
+tags: [[Feature Branches - Gitflow Workflow]]
+title: Finishing a Feature Branch - Feature Branches - Gitflow Workflow
+tooltip: Finishing a Feature Branch - Feature Branches - Gitflow Workflow
+type: text/vnd.tiddlywiki
+
+!!Finishing a feature branch
+
+When you're done with the development work on the feature, the next step is to merge the `feature_branch` into `develop`
+
+Without the git-flow extensions:
+
+```
+git checkout develop
+git merge feature branch
+```
+
+Using the git-flow extensions:
+
+```
+git flow feature finish -k feature_branch
+```

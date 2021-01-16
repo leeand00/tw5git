@@ -1,0 +1,13 @@
+created: 20210116005300531
+creator: aleer
+modified: 20210116013155894
+modifier: aleer
+tags: git-flow-branch [[Develop Branch]]
+title: Feature Branch
+type: text/vnd.tiddlywiki
+
+//(Feature Branches, plural)//
+
+>''@@color:red;WARN:@@''  The feature branch should __only__ merge with the [[develop branch|Develop Branch]].
+
+''Parent Branch:'' [[Develop Branch]]
