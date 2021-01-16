@@ -1,0 +1,22 @@
+created: 20210116014638300
+creator: aleer
+modified: 20210116033650255
+modifier: aleer
+tags: git-flow-branch
+title: Release Branch
+type: text/vnd.tiddlywiki
+
+Once [[develop|Develop Branch]] has acquired enough [[features|Feature Branch]] (feature merges) for a release (or a predetermined release date is approaching), you fork a ''release branch'' off of [[develop|Develop Branch]].
+
+Creating [[this branch|Release Branch]] starts the next release cycle, so no new [[features|Feature Branch]] can be added after this point - only [[bug fixes]], [[documentation generation|Generated Documentation]], and other release-oriented tasks should go in this branch.
+
+Only the following can be added after a release branch is forked:
+
+*[[Bug Fixes|Bug Fix]]
+*[[Documentation Generation|Generated Documentation]]
+*Other Release-Oriented Tasks
+
+---
+
+*''Forked from: '' [[Develop Branch]]
+*''Merged to: '' [[Master Branch]] and [[Develop Branch]]
