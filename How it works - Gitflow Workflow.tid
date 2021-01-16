@@ -1,0 +1,50 @@
+created: 20210116005005206
+creator: aleer
+modified: 20210116151135605
+modifier: aleer
+tags: [[Gitflow Workflow]]
+title: How it works - Gitflow Workflow
+type: text/vnd.tiddlywiki
+
+!How it works
+
+{{HowItWorks.svg}}
+
+!!Develop and Master Branches
+
+Instead of a single `master` branch, this workflow uses two branches to record the history of the project.  The [[master|Master Branch]] branch stores the [[official release history|Official Release History]], and the [[develop branch|Develop Branch]] serves as an [[integration branch]] for [[Features]].  It's also convenient to [[tag]] all commits in the [[master]] branch with a [[version number|Version Number]].
+
+The first step is to complement the [[default master|Master Branch]] with a [[develop branch|Develop Branch]].  A simple way to do this is for one developer to create an empty [[develop branch|Develop Branch]] and [[push|Two Possible Scenarios - Reverting Changes]] it to the server:
+
+```
+git branch develop
+git push -u origin develop
+```
+
+[[This branch|Develop Branch]] will contain the complete history of the project, whereas [[master|Master Branch]] will contain an abridged version.  Other developers should now clone the [[central repository|Central Repository]] and create a [[tracking branch|Tracking Branch]] for [[develop|Develop Branch]].
+
+When using the git-flow extension library, executing `git flow init` on an existing repo will create the [[develop branch|Develop Branch]]
+
+```
+$ git flow init
+
+
+Initialized empty Git repository in ~/project/.git/
+No branches exist yet. Base branches must be created now.
+Branch name for production releases: [master]
+Branch name for "next release" development: [develop]
+
+
+How to name your supporting branch prefixes?
+Feature branches? [feature/]
+Release branches? [release/]
+Hotfix branches? [hotfix/]
+Support branches? [support/]
+Version tag prefix? []
+
+
+$ git branch
+* develop
+ master
+```
+
