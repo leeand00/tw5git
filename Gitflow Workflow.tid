@@ -1,0 +1,20 @@
+created: 20210116002336947
+creator: aleer
+modified: 20210116185046876
+modifier: aleer
+tags: article
+title: Gitflow Workflow
+type: text/vnd.tiddlywiki
+
+[[link|https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow]]
+
+>''NOTE:'' It would be more helpful to jump to the [[Summary|Summary - Gitflow Workflow]] to figure out what needs to be done in your existing gitflow repo.
+
+#[[Intro|Intro - Gitflow Workflow]]
+#[[Getting Started|Getting Started - Gitflow Workflow]]
+#[[How it works|How it works - Gitflow Workflow]]
+#[[Feature Branches|Feature Branches - Gitflow Workflow]]
+#[[Release Branches|Release Branches - Gitflow Workflow]]
+#[[Hotfix Branches|Hotfix Branches - Gitflow Workflow]]
+#[[Example|Example - Gitflow Workflow]]
+#[[Summary|Summary - Gitflow Workflow]]
