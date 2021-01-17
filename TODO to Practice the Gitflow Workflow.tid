@@ -1,0 +1,40 @@
+created: 20210116145855487
+creator: aleer
+modified: 20210116153723676
+modifier: aleer
+tags: 
+title: TODO to Practice the Gitflow Workflow
+type: text/vnd.tiddlywiki
+
+Just read / wikied an article on [[Gitflow Workflow]]
+
+To get some practice with releases, hotfixes and tagging the master branch, I need to add documentation for a release to the following projects:
+
+*''tiddlywikiNginx''<br/>//(Debian Linux, what I use at home)//
+**Need to add <<tag "project-documentation">> in one or two [[release branches|Release Branch]] for:
+**#Initial Setup / Installation
+**#Basic Creation of new wikis
+**#Ferrying of changes via github between work and home environments.
+**#*(see //''tiddlywiki5 (general)''// below)
+*''tiddlywikiIIS'' <br/> //(Windows 10, what I use at work)//
+**Need to add <<tag "project-documentation">> in one or two [[release branches|Release Branch]] for:
+**#Initial Setup / Installation
+**#Basic Creation of new wikis
+**#Ferrying of changes via github between work and home environments 
+**#*(see //''tiddlywiki5 (general)''// below)
+*''tiddlywiki5 (general)''<br/>(General Documentation for Storing Wiki `.tid` in github / gitea)
+**Document `.gitignore` where the repo ignores (and regenerates) `$__config_tiddlyweb_host.tid`, so that the `.tid` files are portable between work and home and not tied to the hostname.
+**Document writing an article in a feature branch and merging it back into develop.
+*''udemy webscrape''
+*#Need to add <<tag "project-documentation">> in one or two [[release branches|Release Branch]] for:
+*##Initial Setup / Installation
+*##Basic Usage
+*##Merge into [[Master Branch]] and [[Develop Branch]]
+*#Need to add new [[Features|Feature Branch]] such as scraping % of course completed.
+*''Simphony Soundboard''
+*#Has several [[feature branches|Feature Branch]] that need merged into [[develop|Develop Branch]].
+*#Needs <<tag "project-documentation">> in a [[release branch|Release Branch]]
+*#Needs the [[release branch|Release Branch]] merged into [[master|Master Branch]].
+*#The [[master branch|Master Branch]] needs tagged with a [[version number|Version Number]] for example `0.1`.
+*#Maybe some [[hot fixes|Hotfix Branch]] need applied in a [[hotfix branch|Hotfix Branch]] and merged back into [[master|Master Branch]] and [[develop|Develop Branch]] or merged into [[Release Branch]].
+*##Then the [[master|Master Branch]] needs [[tagged|tag]] with a new [[Version Number]] for example `0.1.1`.
