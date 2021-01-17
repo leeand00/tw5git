@@ -1,0 +1,13 @@
+created: 20210116144827647
+creator: aleer
+modified: 20210116145613166
+modifier: aleer
+tags: git-flow-branch [[Master Branch]]
+title: Hotfix Branch
+type: text/vnd.tiddlywiki
+
+
+>''@@color: red; WARN:@@'' The ''Hotfix Branches'' are the only branch that should fork directly off of [[master|Master Branch]].
+
+*''Parent Branch/(fork branch):'' [[Master Branch]]
+*''Merge back into Branches:'' [[Master|Master Branch]] and [[Develop|Develop Branch]] or the [[current release branch|Release Branch]],

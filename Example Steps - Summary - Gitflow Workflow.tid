@@ -1,0 +1,20 @@
+caption: Steps
+created: 20210116183931254
+creator: aleer
+modified: 20210116184825368
+modifier: aleer
+order: 1
+tags: [[Summary - Gitflow Workflow]]
+title: Example Steps - Summary - Gitflow Workflow
+tooltip: Links to related steps in the workflow not the branches.
+type: text/vnd.tiddlywiki
+
+>''NOTE:'' This gives links to the steps in question rather than the branches (like the next tab)
+
+#[[A develop is created from master|]].
+#[[A release is created from develop|]].
+#[[Feature branches are created from develop|Creating a feature branch - Feature Branches - Gitflow Workflow]].
+#[[When a Feature is complete, it is merged into the develop|Finishing a Feature Branch - Feature Branches - Gitflow Workflow]].
+#[[When a Release is done it is merged into develop and master|Starting - Release Branches - Gitflow Workflow]].
+#[[If an issue in master is detected a hotfix is created from master|Finishing - Release Branches - Gitflow Workflow]].
+#[[Once the hotfix is completed, it is merged to both develop and master|Hotfix Branches - Gitflow Workflow]].

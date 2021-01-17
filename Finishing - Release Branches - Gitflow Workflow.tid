@@ -1,0 +1,33 @@
+caption: Finishing a Release
+created: 20210116033424050
+creator: aleer
+modified: 20210116033540510
+modifier: aleer
+order: 1
+tags: [[Release Branches - Gitflow Workflow]]
+title: Finishing - Release Branches - Gitflow Workflow
+tooltip: Finishing - Release Branches - Gitflow Workflow
+type: text/vnd.tiddlywiki
+
+!!!Finishing a Release
+
+Once the release is ready to ship, it will get merged into [[master|Master Branch]] and [[develop|Develop Branch]], then the [[release branch|Release Branch]] will be deleted.  It's important to merge back into [[develop|Develop Branch]] because critical updates may have been added to the [[release branch|Release Branch]] and they need to be accessible to [[new features|Feature Branch]].  If your organization stresses code review, this would be an idea place for a [[pull request|Pull Request]].
+
+To finish a [[release|Release Branch]], use the following methods:
+
+Without the git-flow extensions:
+
+```
+git checkout master
+git merge release/0.1.0
+```
+
+Or with the git-flow extension:
+
+```
+git flow release finish '0.1.0'
+```
+
+
+
+

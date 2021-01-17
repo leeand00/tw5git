@@ -1,0 +1,24 @@
+created: 20210116014412889
+creator: aleer
+modified: 20210116033720076
+modifier: aleer
+tags: [[Gitflow Workflow]]
+title: Release Branches - Gitflow Workflow
+type: text/vnd.tiddlywiki
+
+!Release Branches
+
+{{git-graph3.svg}}
+
+#Once [[develop|Develop Branch]] has acquired enough [[features|Feature Branch]] for a release (or a predetermined release date is approaching), you fork a [[release branch|Release Branch]] off of [[develop|Develop Branch]] off of [[develop|Develop Branch]].  
+#Creating [[this branch|Release Branch]] starts the next release cycle, so no new [[features|Feature Branch]] can be added after this point:
+#*Only 
+#**[[bug fixes]]
+#**[[documentation generation|Generated Documentation]]
+#**Other release-oriented tasks should go in this branch.  
+#Once it's ready to ship, the [[release branch|Release Branch]] gets merged into [[master|Master Branch]] and [[tagged|tag]] with a [[version number|Version Number]].  
+#In addition, it should be merged back into [[develop|Develop Branch]], which may have progressed since the release was initiated.
+
+Using a [[dedicated branch to prepare releases|Release Branch]] makes it possible for one team to polish the current release while another team continues working on [[features|Feature Branch]] for the next release.  It also creates well-defined phases of development (e.g. it's easy to say , "This week we're preparing for version 4.0," and to actually see it in the structure of the repository).
+
+<<tabs "[tag[Release Branches - Gitflow Workflow]sort[order]]">>

@@ -1,0 +1,13 @@
+created: 20210116004024428
+creator: aleer
+modified: 20210116032354421
+modifier: aleer
+tags: git-flow-branch
+title: Develop Branch
+type: text/vnd.tiddlywiki
+
+The [[develop branch|Develop Branch]] serves as an [[integration branch]] for [[Features]].
+
+Developers should clone the [[central repository|Central Repository]] and create a [[tracking branch|Tracking Branch]] for [[develop|Develop Branch]].
+
+''Child Branches:'' [[Feature Branches|Feature Branch]], [[Release Branch|Release Branch]].

@@ -1,0 +1,31 @@
+created: 20210116033757552
+creator: aleer
+modified: 20210116180819061
+modifier: aleer
+tags: [[Gitflow Workflow]]
+title: Hotfix Branches - Gitflow Workflow
+type: text/vnd.tiddlywiki
+
+!Hotfix Branches
+
+{{git-graph4.svg}}
+
+[[Maintenance or "hotfix" branches|Hotfix Branch]] are used to quickly [[patch|Patch]] [[production releases|Production Release]].  [[Hotfix branches|Hotfix Branch]] are alot like [[release|Release Branch]] and [[feature|Feature Branch]] branches except they're based on [[master|Master Branch]] instead of [[develop|Develop Branch]].  [[This|Hotfix Branch]] is the only branch that should fork directly off of [[master|Master Branch]].  As soon as the [[fix]] is complete, it should be merged into both [[master|Master Branch]] and [[develop|Develop Branch]] (or the current [[release|Release Branch]] branch), and [[master|Master Branch]] should be [[tagged|Tag]] with an updated [[version number|Version Number]].
+
+Having a dedicated line of development for bug fixes lets your team address issues without interrupting the rest of the workflow or waiting for the next release cycle.  You can think of [[maintenance branches|Hotfix Branch]] as ad hoc [[release branches|Release Branch]] that work directly with [[master|Master Branch]].  A [[hotfix|Hotfix Branch]] branch can be created using the following methods:
+
+Without the git-flow extensions:
+
+```
+git checkout master
+git checkout -b hotfix_branch
+```
+
+When using the git-flow extensions:
+
+```
+$ git flow hotfix start hotfix_branch
+```
+
+Similar to finishing a [[release branch|Release Branch]], a [[hotfix branch|Hotfix Branch]] gets merged into both [[master|Master Branch]] and [[develop|Develop Branch]].
+

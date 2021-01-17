@@ -1,0 +1,20 @@
+caption: Branches
+created: 20210116183907072
+creator: aleer
+modified: 20210116184736480
+modifier: aleer
+order: 2
+tags: [[Summary - Gitflow Workflow]]
+title: Branches - Summary - Gitflow Workflow
+tooltip: Links to related branches instead of steps
+type: text/vnd.tiddlywiki
+
+>''NOTE:'' This is the same as the previous tab with links to individual branch descriptions.
+
+#A [[develop|Develop Branch]] is created from [[master|Master Branch]].
+#A [[release|Release Branch]] is created from [[develop|Develop Branch]].
+#[[Feature|Feature Branch]] branches are created from [[develop|Develop Branch]].
+#When a [[Feature|Feature Branch]] is complete, it is merged into the [[develop|Develop Branch]].
+#When a [[release|Release Branch]] is done it is merged into [[develop|Develop Branch]] and [[master|Master Branch]]
+#If an issue in [[master|Master Branch]] is detected a [[hotfix|Hotfix Branch]] is created from [[master|Master Branch]].
+#Once the [[hotfix|Hotfix Branch]] is completed, it is merged to both [[develop|Develop Branch]] and [[master|Master Branch]].

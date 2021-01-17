@@ -1,0 +1,21 @@
+created: 20210116181556270
+creator: aleer
+modified: 20210116185103170
+modifier: aleer
+tags: [[Gitflow Workflow]]
+title: Summary - Gitflow Workflow
+type: text/vnd.tiddlywiki
+
+Here we discussed the Gitflow Workflow.  Gitflow is one of many styles of [[Git workflows]] you and your team can utilize.
+
+Some key takeaways to know about Gitflow are:
+
+*The workflow is great for release-based software workflow.
+*Gitflow offers a dedicated channel for hotfixes to production.
+
+The overall flow of Gitflow is:
+
+<<tabs "[tag[Summary - Gitflow Workflow]sort[order]]">>
+
+
+Next learn about the [[Forking Workflow]] or visit our [[workflow comparison page]].

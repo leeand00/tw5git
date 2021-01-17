@@ -1,0 +1,27 @@
+caption: Create Feature Branch
+created: 20210116013936851
+creator: aleer
+modified: 20210116014308688
+modifier: aleer
+order: 0
+tags: [[Feature Branches - Gitflow Workflow]]
+title: Creating a feature branch - Feature Branches - Gitflow Workflow
+tooltip: Creating a feature branch - Feature Branches - Gitflow Workflow
+type: text/vnd.tiddlywiki
+
+!!Creating a feature branch
+
+Without the git-flow extensions:
+
+```
+git checkout develop
+git checkout -b feature_branch
+```
+
+When using the git-flow extension:
+
+```
+git flow feature start feature_branch
+```
+
+Continue your work and use `git` like you normally would.

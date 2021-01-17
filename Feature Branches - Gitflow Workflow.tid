@@ -1,0 +1,24 @@
+created: 20210116013829801
+creator: aleer
+modified: 20210116014249377
+modifier: aleer
+tags: [[The Gitflow workflow]]
+title: Feature Branches - Gitflow Workflow
+type: text/vnd.tiddlywiki
+
+!Feature Branches
+
+Each new feature should reside in its own branch, which can be [[pushed to the central repository|git push]] for backup/collaboration.  But, instead of branching off of master, [[feature branches|Feature Branch]] use [[develop|Develop Branch]] as their parent branch.  When a feature is complete, it gets [[merged back into develop]].  Features should never interact directly with [[master|Master Branch]].
+
+{{git-graph2.svg}}
+
+Note that [[feature branches|Feature Branch]] combined with the [[develop branch|Develop Branch]] is, for all intents and purposes, the Feature Branch Workflow.  But, the Gitflow Work flow doesn't stop there.
+
+[[Feature branches|Feature Branch]] are generally created off of the latest [[develop branch|Develop Branch]].
+
+
+
+<<tabs "[tag[Feature Branches - Gitflow Workflow]sort[order]]">>
+
+
+

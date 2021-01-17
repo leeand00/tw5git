@@ -1,0 +1,15 @@
+created: 20210116003931508
+creator: aleer
+modified: 20210116145150494
+modifier: aleer
+tags: git-flow-branch
+title: Master Branch
+type: text/vnd.tiddlywiki
+
+The [[master|Master Branch]] branch stores the [[official release history|Official Release History]] of the project.
+
+It's also convenient to [[tag]] all commits in the [[master]] branch with a [[version number]].
+
+>''@@color: red; WARN:@@'' The ''Hotfix Branches'' are the only branch that should fork directly off of [[master|Master Branch]].
+
+''Child Branches:'' [[Hotfix Branches|Hotfix Branch]]
