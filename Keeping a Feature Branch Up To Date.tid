@@ -1,0 +1,16 @@
+created: 20210306204543401
+modified: 20210306204647989
+tags: 
+title: Keeping a Feature Branch Up To Date
+type: text/vnd.tiddlywiki
+
+
+[[link|https://github.com/spacetelescope/mirage/wiki/Keeping-a-feature-branch-up-to-date]]
+
+# The 2nd feature branch is behind the `develop` one...and the first branch has been merged into develop with `git flow feature finish -k`
+
+# Now the 2nd feature branch need rebased to catch up with develop, so we can keep developing...
+# So we: 
+#       git checkout feature/2nd
+#	git rebase develop
+#       And gitk --all will show that this thing is up to date now and ahead of develop.
