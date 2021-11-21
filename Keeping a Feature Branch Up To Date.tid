@@ -1,5 +1,5 @@
 created: 20210306204543401
-modified: 20210306204647989
+modified: 20210308212905576
 tags: 
 title: Keeping a Feature Branch Up To Date
 type: text/vnd.tiddlywiki
@@ -14,3 +14,36 @@ type: text/vnd.tiddlywiki
 #       git checkout feature/2nd
 #	git rebase develop
 #       And gitk --all will show that this thing is up to date now and ahead of develop.
+
+---
+
+With the small number of files doing the core of the work for the simulator, there is opportunity for the same file to be updated simultaneously in different ways in two different feature branches.  
+
+Also, what happens when your [[feature branch]] falls behind `master`, where the file you've updated in your [[feature branch]] has changed in `master`?
+
+When it comes time to merge a feature branch that has fallen behind `master`, then you most likely need to [[rebase]] your feature branch.  I ran into a few issues while trying this with one of my feature branches, so I wanted to post the solution here.
+
+I created the `proper-pam` branch and made edits in order to correctly use the pixel area mask in the simulator.  At the same time, I have a `no-distortion-mode`, branch with updates to implement a distortionless mode.  I finished the work in `no-distortion-mode`, pushed the results to `origin` (my mirage fork), and then merged into `upstream`. This means that `upstream/master` now contains commits beyond what was in it when `proper-pam` was created.
+
+So since I finished work on `proper-pam`, here is the recipe to rebase `proper-pam`, push to `origin` and then merge with upstream:
+
+Rebase:
+
+#`git checkout proper-pam`
+#`git fetch upstream master` - Fetches upstream (remote), master (branch) to the local repo, but doesn't add the changes to the working directory.
+#`git rebase upstream/master` - 
+
+What did rebase just do?  When you do `git rebase upstream/master`, what it is actually doing is:
+
+#Backing out your local commits
+#Adding the new commits from `upstream/master` to the local branch
+#Putting a new commit (or commits) after the `upstream/master` commits with a new hash
+
+Meanwhile on `origin/proper-pam`, it already has your local commits because you pushed them there previously (we are assuming in this case).  But those local commits are different (and in a different order) than your newly rebased local branch.
+
+Push changes to `origin/proper-pam` (which already exists).  Forcing is necessary because the local branch now contains the commits from `upstream/master` that have happened since proper-pam was created, but they have been inserted before the commits in `proper-pam`.  This means that the local `proper-pam` and `origin/proper-pam` have diverged.
+
+>''NOTE:'' You should only do this if no one else is working off the same feature branch, and no one has forked from your `origin`.
+
+At this point `origin/proper-pam` is based on the current `upstream/master`, so you can submit/update a [[pull request|Pull Request]] and merge the changes into `upstream/master`.
+
