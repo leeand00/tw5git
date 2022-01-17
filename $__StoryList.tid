@@ -1,5 +1,7 @@
-created: 20210116002128457
-list: gitea gitignore [[Gitflow and Source Tree]] [[Undoing commits]] [[The Gitflow workflow]]
-modified: 20210116002128457
+created: 20220116172812032
+creator: aleer
+list: $:/Import [[Storing Git Credentials with Git Credential Helper]] [[Git Credentials Helper - Storing Git Credentials with Git Credential Helper]] [[manager - Git Credentials Helper - Storing Git Credentials with Git Credential Helper]] [[Git Credential Manager]] [[Git Credential Manager - Windows Subsystem for Linux]] [[Draft of 'Requirements - Git Credential Manager - Windows Subsystem for Linux' by aleer]] [[AVOIDING REPETITION - gitcredentials - Providing usernames and passwords to Git]] [[Draft of 'Configuration Options - gitcredentials - Providing usernames and passwords to Git' by aleer]] gitea gitignore [[Gitflow and Source Tree]] [[Undoing commits]] [[The Gitflow workflow]]
+modified: 20220117010129998
+modifier: aleer
 title: $:/StoryList
 type: text/vnd.tiddlywiki

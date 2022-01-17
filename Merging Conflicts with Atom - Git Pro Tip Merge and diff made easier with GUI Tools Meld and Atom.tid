@@ -1,0 +1,21 @@
+created: 20210227194023892
+creator: aleer
+modified: 20210227194025274
+modifier: aleer
+tags: [[Git Pro Tip Merge and diff made easier with GUI Tools Meld and Atom]]
+title: Merging Conflicts with Atom - Git Pro Tip Merge and diff made easier with GUI Tools Meld and Atom
+type: text/vnd.tiddlywiki
+
+!!Resolving conflicts with Atom
+
+If you don't know it already, [[Atom]] is a text editor made by GitHub, by developers and for developers.  In its default configuration, it's already featureful and quite smart, but you can add features to it by packages.  Atom resembles [[Sublime Text]] , but Atom is [[free software]] (in terms of both liberty and price).
+
+To install Atom on either [[Linux Kamarada]] or [[openSUSE]], download and install the RPM package from its official website:
+
+*https://atom.io/
+
+When you open a conflicting file with Atom, it allows you to easily choose between one or the other version of the conflicting lines by simply clicking the `Use me` button for the desired one:
+
+{{GitMergeConflictWithAtom.png}}
+
+Note that you don't need to be binary: you can choose one of the versions and edit it to achieve an in-between version.  What matters is what ends up in the file when you save it.

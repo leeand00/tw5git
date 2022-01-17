@@ -1,0 +1,87 @@
+created: 20210227164124449
+creator: aleer
+modified: 20220109211408868
+modifier: aleer
+tags: article
+title: Git Pro Tip Merge and diff made easier with GUI Tools Meld and Atom
+type: text/vnd.tiddlywiki
+
+[[link|https://kamarada.github.io/en/2019/12/02/git-pro-tip-merge-and-diff-made-easier-with-gui-tools-meld-and-atom/]]
+
+!Git Pro Tip: merge and diff made easier with GUI tools Meld and Atom
+
+Dec 2, 2019
+
+Here is a tip for developers using Git: have you ever had a hard time merging branches?  Did you know that there are GUI tools to resolve conflicts?  They can make your job a lot easier.  Today we are going to take a look at two of them: the Atom text editor and the Meld diff and merge tool.
+
+!!Merging and resolving conflicts
+
+Before going to the tip itself, to make sure that everyone is on the same page, let's see how commonly `git merge` is used, conflicts happen and are solved.
+
+Imagine that you and a coworker are working on a development project and the team us a Git repository to store the source code.  In addition to the `master` branch, each developer has their own branch (e.g. `antonio` and `john`).  While you are developing a feature, you commit to your branch.  When you are finished, you merge your branch into the `master` branch.
+
+Imagine also that you and your colleagues are working in parallel on the same file, editing the same part of the file (or even the same lines), but your colleague merged his `john` branch into the `master` branch before you.  When you try to merge your branch, Git accuses a file conflict:
+
+| {{MergeConflict.svg}} |4. @@color: #3E70EF;antonio@@ tried to merge, but `git` accused a file conflict.<br/><br/>3. @@color:#FF0000;John@@ merged his branch into the @@color:#00FF00;master@@ branch<br/><br/>2. @@color:#FF0000;John@@ and @@color: #3E70EF;antonio@@ edited the same file in parallel.<br/><br/>1. There was a file on a `git` repository. |
+
+
+I'll give you an example that happened to me in real life once, while merging upstream changes to a fork:
+
+```
+$ git checkout master1
+$ git merge upstream1
+Auto-merging publish.sh
+Auto-merging libs/popper.js/1.16.0/umd/pupper.js
+...
+Auto-merging _layouts/post.html
+Auto-merging _layouts/default.html
+Auto-merging _includes/sidebar.html
+Auto-merging _includes/head.html
+CONFLICT (content): Merge conflict in _includes/head.html
+Auto-merging _includes/footer.html
+CONFLICT (content): Merge conflict in _includes/footer.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+
+$ git status
+On branch master1
+You have unmerged paths.
+    (fix conflicts and run "git commit")
+    (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+        modified:  _includes/adsense.html
+        modified:  _includes/sidebar.html
+...
+        new file:  libs/popper.js/1.16.0/umd/popper.min.js.map
+        modified:  publish.sh
+
+Unmerged paths:
+ (use "git add/rm <file>..." as appropriate to mark resolution)
+
+       both modified:   _includes/footer.html
+       both modified:   _includes/head.html
+       deleted by us:   _posts/2015-08-25-welcome-to-jekyll.markdown
+       both modified:   assets/css/main.css
+```
+
+In case of a merge conflict, you need to manually edit the conflicting files, compare the changes you and your colleague made and deciding on the final version of the files, and then run `git commit` to finalize the merge commit.
+
+[[Merging Conflicts with Atom - Git Pro Tip Merge and diff made easier with GUI Tools Meld and Atom]]
+
+
+[[Resolving Conflicts with Meld - Git Pro Tip Merge and diff made easier with GUI Tools Meld and Atom]]
+
+!!Comparing File Revisions
+
+To compare revisions of the same file (i.e. to show the changes between a file in one branch and that same file in another branch, or changes made to a file between two commits), you can use the [[git diff]] command:
+
+```
+$ git checkout master1
+$ git diff upstream1 -- _includes/footer.html
+```
+
+In this example, we want to know what changed in the `_includes/footer.html` fiel from the named branch (`upstream1`) to the current branch (`master1`):
+

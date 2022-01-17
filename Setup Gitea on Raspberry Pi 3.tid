@@ -1,6 +1,6 @@
 created: 20200513152213458
 creator: aleer
-modified: 20200513192518853
+modified: 20220109211431515
 modifier: aleer
 tags: article
 title: Setup Gitea on Raspberry Pi 3
@@ -19,3 +19,22 @@ These instructions are based on the article https://www.alexruf.net/2016/05/23/s
 [[Start gitea - Setup Gitea on Raspberry Pi 3]]
 
 [[Install and setup nginx with ssl - Setup Gitea on Raspberry Pi 3]]
+
+[[Create backup-script - Setup Gitea on Raspberry Pi 3]]
+
+!Create a backup-script
+
+Now we want to create a backup that is run by crontab every day.  To do so, create a new file called `gitea-backup.sh` and insert the following content (replace `YOUR_SERVER/YOUR_DIR` as well as `USER` and `PASSWORD`)
+
+```
+#!/bin/bash
+
+# Create directory if it does not exist
+mkdir -p git
+
+# Mount NAS directory
+sudo mount -t cifs //<your-nas>/Git git -o user=<your=-nas-user>,pass=<your-password>
+
+#Create backup directory if it does not exist and cd into it
+mkdir -p
+```

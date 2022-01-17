@@ -1,0 +1,13 @@
+created: 20211120034307689
+creator: aleer
+modified: 20220109211402825
+modifier: aleer
+tags: git-hub documentation
+title: GitHub - Secure Your Account with 2FA
+type: text/vnd.tiddlywiki
+
+[[link|https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication]]
+
+*[[About two-factor authentication|GitHub - Secure Your Account with 2FA - About two-factor authentication]]
+*[[Requiring two-factor authentication|GitHub - Secure Your Account with 2FA - Configuring two-factor authentication]]
+

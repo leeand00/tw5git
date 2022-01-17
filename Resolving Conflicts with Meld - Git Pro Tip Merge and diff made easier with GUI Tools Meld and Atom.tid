@@ -1,0 +1,70 @@
+created: 20210227223100818
+creator: aleer
+modified: 20210227223102206
+modifier: aleer
+tags: [[Git Pro Tip Merge and diff made easier with GUI Tools Meld and Atom]]
+title: Resolving Conflicts with Meld - Git Pro Tip Merge and diff made easier with GUI Tools Meld and Atom
+type: text/vnd.tiddlywiki
+
+!!Resolving conflicts with Meld
+
+[[Meld]] is a visual diff and merge tool targeted at developers.  It helps you compare files and folders in two or three ways and supports many popular version control systems, including `git`.
+
+To install Meld on either Linux Kamarada or openSUSE, run:
+
+```
+zypper in meld
+```
+
+You can use Meld standalone by opening the app and selecting the files or folders you want to compare, but I won't go into detail about its basic usage, because our goal here is to see how to use Meld integrated with `git`.
+
+To resolve merge conflicts using Meld, run `git mergetool`:
+
+```
+$ git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+meld opendiff kdiff3 tkdiff xxdiff tortoismerge gvimdiff diffuse diffmerge ecmerge p4merge araxis bc codecompare emerge vimdiff 
+Merging:
+_includes/footer.html
+_includes/head.html
+_posts/2015-08-25-welcome-to-jekyll.markdown
+assets/css/main.css
+
+Normal merge conflict for '_includes/footer.html':
+  (local): modified file
+  (remote): modified file
+Hit return to start merge resolution tool (meld):
+```
+
+The `git mergetool` command fires up an appropriate visual merge tool and walks you through the conflicts.  It displays that long message on the first run because we have not yet set up a merge tool.  Note that it supports several tools, including `Meld`, which is the first on the lsit and is also the one it suggests using.  Hit `Enter` to start `Meld`.
+
+{{MeldMergeTool.png}}
+
+Meld opens the conflicting file in three ways: 
+
+*''Left:''
+**The previous version in the current branch (in this example the @@color:#00FF00;master1@@ branch); 
+*''Middle:''
+**The merged version (this is the one which is going to be committed)
+*''Right:''
+**The version in the branch being merged (`upstream1`)
+
+You can use the arrows next to the lines to copy code snippets from one version to the other.
+
+Note that, as in Atom, Meld does not impose you take binary dicisions: you can simply place the cursor in the middle view and start typing.  The final version of the merged file will be anything which is in the middle view, it does not matter if the content came from the left view, the right view or was typed by hand.
+
+When you are finished resolving the conflict, click `Save`.
+
+To set up `git` to always use `meld` to resolve conflicts without asking which tool to use, run the following commands:
+
+```
+$ git config --global merge.tool meld
+$ git config --global mergetool.prompt false
+```
+
+With that done, that long message will no longer appear when you run `git mergetool`: Git will indicate which file you are merging and will already open Meld (you won't need ot hit `Enter`).
+
+Besides resolving merge conflicts, Meld can be used to compare revisions of files controlled by `git`.

@@ -1,0 +1,19 @@
+created: 20220108212124190
+creator: aleer
+modified: 20220108212147145
+modifier: aleer
+tags: 
+title: git hub push requires token
+type: text/vnd.tiddlywiki
+
+Hi Oscar,
+
+Udemy is taking a while to decode the Video, so it might be released tomorrow. So just in case that you're reading this, or someone else facing the same issue. You can do the following that also works (PAT instead of SSH):
+
+From your GitHub account, go to Settings -> Developer Settings -> Personal Access Token -> Generate New Token (Asks for your password) -> Fill in 'Note' and set Expiration (set something high) -> click Generate token -> Copy the generated Token (maybe in a password manager, dont lose it!), it will be something like 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
+
+If you haven't been able to pull or push a repository yet you can just rerun the command in cmd.exe and you should get a popup asking for your personal access token (the one you just created). However, if it worked in the past and now doesn't, please do the following:
+
+Go to Credential Manager from Control Panel -> Windows Credentials -> find git:https://github.com -> Edit -> Replace your password with your GitHub Personal Access Token -> thats it :)
+
+Please let me know if that worked for you. Hopefully the video should be ready by tomorrow :)

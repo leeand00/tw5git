@@ -1,0 +1,43 @@
+created: 20211120035801151
+creator: aleer
+modified: 20220109211354809
+modifier: aleer
+tags: [[GitHub - Secure Your Account with 2FA]]
+title: GitHub - Secure Your Account with 2FA - Configuring two-factor authentication
+type: text/vnd.tiddlywiki
+
+!Configuring two-factor authentication
+
+You can choose among multiple options to add a second source of authentication to your account.
+
+---
+
+You can configure two-factor authentication using a mobile app or via text message.  You can also add a security key.
+
+We strongly recommend using a time-based one-time password (TOTP) application to configure 2FA.  TOTP applications are more reliable than SMS, especially for locations outside the United States.  TOTP apps support the secure backup of your authentication codes in the cloud and can be restored if you lose access to your device.
+
+>@@color: red;''WARN:''@@
+>>If you're a member, billing manager, or outside collaborator to a private repository of an organization that requires two-factor authentication, you must leave the organization before you can disable 2FA on GitHub.com
+>>If you disable 2FA, you will automatically lose access to the organization and any private forks you have of the organization's private repositories.  To regain access to the organization and your forks, re-enable two-factor authentication and contact an organization owner.
+
+If you're a member of an enterprise with managed users, you cannot configure 2FA for your managed user account.  2FA should be configured through your identity provider.
+
+!!Configuring two-factor authentication using a TOTP mobile app.
+
+A time-based one-time password (TOTP) application automatically generates an authentication code that changes after a certain period of time.  We recommend using cloud-based TOTP apps such as:
+
+*1Password
+*Authy
+*LastPass Authenticator
+*Microsoft Autehnticator
+
+>''TIP:'' To configure authentication via TOTP on multiple devices, during setup, scan the QR code using each device at the same time.  If 2FA is already enabled and you want to add another device, you must re-configure 2FA from your security settings.
+
+#Download a TOTP app.
+#In the upper-right corner of any page, click your profile photo, then click `Settings`.
+#*{{Settings.png}}
+#In the left sidebar, click `Account security`.
+#Under `Two-factor authentication`, click `Enable two-factor authentication`
+#Under `Two-factor authentication`, select `Set up using an app` and click `Continue`.
+#Under `Authentication verification`, do one of the following:
+#*Scan the QR code with your mo
