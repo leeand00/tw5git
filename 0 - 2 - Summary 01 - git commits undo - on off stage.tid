@@ -1,0 +1,14 @@
+caption: remove
+created: 20220807141316108
+modified: 20220811023002989
+order: 2
+tags: [[2 - Summary 01 - git commits undo - on off stage]]
+title: 0 - 2 - Summary 01 - git commits undo - on off stage
+type: text/vnd.tiddlywiki
+
+!!!Removing files from the staging area with `git reset`
+
+If we wanted to remove `file1.txt` or `file2.txt` from the staging area (2.), we have two options:
+
+<<tabs "[tag[0 - 2 - Summary 01 - git commits undo - on off stage]sort[order]]" "" "" "tc-vertical">>
+

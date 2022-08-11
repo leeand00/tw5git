@@ -1,0 +1,23 @@
+caption: cat contents of a version of a file
+created: 20220811030005862
+modified: 20220811035122334
+order: 2
+tags: [[Summary 01 - git commits undo]]
+title: Summary 01 - git commits undo - git show - display the contents of the version of a file
+type: text/vnd.tiddlywiki
+
+!Display The Contents Of a Version of a File
+
+`cat` the version of the file...
+
+{{Summary 01 - git commits undo - git show - display the contents of the version of a file.png}}
+
+
+`$ git show HEAD~2:file1.txt` (ff96d12)
+
+```
+lorem ipsum
+Another One
+Random line
+```
+

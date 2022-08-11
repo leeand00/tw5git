@@ -1,0 +1,24 @@
+created: 20220702181645860
+modified: 20220811023445662
+title: Summary 02 - git commits undo - pull to working directory from git repo
+type: text/vnd.tiddlywiki
+
+!!Options for Pulling a File from your last commit from the Git Repo to the Project Directory
+
+!!!Using `git restore` to place files / commits in the working directory from the Git Repo
+
+>@@color:red;''WARN:''@@ If you do this is there is no way to undo it, whatever you had in your working directory is gone.
+
+
+{{Summary 01 1_1.png}}
+
+*Let's say that in the Project Directory (1.) our `file2.txt` and `file3.txt` have a different state from that our the Git Repo (3.).
+**If we wanted to get the last commit, the content of the last commit from the Git Repo (3.) into our Project Directory (1.) 
+
+We can use:
+
+*`git restore <filename>` - to restore an individual file from the last commit from the Git Repo (3.)  into the Project Directory (1.)
+*or we can use `git restore .` to restore the entire last commit from the Git Repo (3.) to our entire Project Directory (1.) 
+
+
+

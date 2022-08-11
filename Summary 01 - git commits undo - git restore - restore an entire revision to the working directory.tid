@@ -1,0 +1,37 @@
+caption: restore an entire revision
+created: 20220811040303285
+modified: 20220811041701547
+title: Summary 01 - git commits undo - git restore - restore an entire revision to the working directory
+type: text/vnd.tiddlywiki
+
+!Restore An Entire Revision To The Working Directory
+
+!!Restoring the Entire Last Commit To The Working Directory
+
+!!!From:
+
+{{Summary 01 - git commits undo - git show - display the contents of the version of a file.png}}
+
+!!!To:
+
+{{Summary 01 - git commits undo - git restore - restore an entire revision to the working directory - last revision.png}}
+
+`$ git restore .`
+
+>''@@color:red; WARN:@@'' There is no way to undo this; your working directory will be over written!!!
+
+---
+
+!!Restoring an Entire Specific Commit To The Working Directory
+
+TODO?!?!?
+
+!!!From:
+
+{{Summary 01 - git commits undo - git show - display the contents of the version of a file.png}}
+
+!!!To:
+
+
+
+>''@@color:red; WARN:@@'' There is no way to undo this; your working directory will be over written!!!

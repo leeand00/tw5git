@@ -1,0 +1,18 @@
+caption: 
+created: 20220811035125313
+modified: 20220811040748617
+order: 4
+title: Summary 01 - git commits undo - git restore - restore file from specific commit
+type: text/vnd.tiddlywiki
+
+!Restore file in Working Directory from a specific commit
+
+!!From:
+{{Summary 01 - git commits undo - git show - display the contents of the version of a file.png}}
+
+!!To:
+{{Summary 01 - git commits undo - git restore - restore file from specific commit.png}}
+
+`git restore -s HEAD~2 file1.txt` (ff96d12)
+
+>''@@color:red; WARN:@@'' There is no way to undo this; your working directory will be over written!!!

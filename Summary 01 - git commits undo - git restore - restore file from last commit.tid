@@ -1,5 +1,8 @@
+caption: restore file from last commit
 created: 20220807144217675
-modified: 20220807211127173
+modified: 20220811032840958
+order: 1
+tags: [[Summary 01 - git commits undo]]
 title: Summary 01 - git commits undo - git restore - restore file from last commit
 type: text/vnd.tiddlywiki
 
@@ -9,6 +12,8 @@ type: text/vnd.tiddlywiki
 
 If we wanted to get the last commit the content of the last commit into the project directory 
 
+{{Summary 01 - git commits undo - git restore - restore file from last commit.png}}
+
 ```
 git restore <file>
 git restore .
@@ -16,3 +21,4 @@ git restore .
 
 And this would take the content from our last commit and put it into our working directory.
 
+>''@@color:red;WARN:@@'' If you do this, there is no way to undo it!!! <br/>The files in your working directory are overwritten.

@@ -1,0 +1,15 @@
+!Commits Undo
+
+So, let's summarize what we have done.   
+
+<<tabs "[tag[Summary 01 - git commits undo]sort[order]]">>
+
+*[[Summary 01 - git commits undo - on off stage]]
+*[[Summary 01 - git commits undo - git restore - restore file from last commit]]
+*[[Summary 01 - git commits undo - git show - display the contents of the version of a file]]
+*[[Summary 01 - git commits undo - git diff - display differences between versions of a file]]
+*[[Summary 01 - git commits undo - git restore - restore file from specific commit]]
+*[[Summary 01 - git commits undo - git restore - restore an entire revision to the working directory]]
+
+*[[Summary 02 - git commits undo - pull to working directory from git repo]]
+
