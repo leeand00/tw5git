@@ -1,6 +1,6 @@
 .tid
-^[$]__config_Manager_Filter.tid
-^[$]__config_Manager_RecentTags.tid
+$__config_Manager_Filter.*
+$__config_Manager_RecentTags.*
 ^Tag.tid
-$__StoryList.tid
+$__Site*
 prestashRestore.png
