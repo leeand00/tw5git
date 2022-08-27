@@ -2,5 +2,5 @@
 $__config_Manager_Filter.*
 $__config_Manager_RecentTags.*
 ^Tag.tid
-$__Site*
+$__Story*
 prestashRestore.png
