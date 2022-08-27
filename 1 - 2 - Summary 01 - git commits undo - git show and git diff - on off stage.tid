@@ -1,0 +1,15 @@
+caption: add
+created: 20220807142635018
+modified: 20220807143537131
+order: 1
+tags: [[2 - Summary 01 - git commits undo - git show and git diff - on off stage]]
+title: 1 - 2 - Summary 01 - git commits undo - git show and git diff - on off stage
+type: text/vnd.tiddlywiki
+
+!!!Adding Files to the Staging Area
+
+{{Summary 01 1_2.png}}
+
+If `git add file1.txt file2.txt` is run;
+
+and we compare `file1.txt` and `file2.txt` in the Staging Area (2.) to `file1.txt` and `file2.txt`, in the Git-Repo (3.), the content is different.

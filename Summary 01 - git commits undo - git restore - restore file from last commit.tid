@@ -1,0 +1,18 @@
+created: 20220807144217675
+modified: 20220807211127173
+title: Summary 01 - git commits undo - git restore - restore file from last commit
+type: text/vnd.tiddlywiki
+
+{{Summary 01 1_1.png}}
+
+----
+
+If we wanted to get the last commit the content of the last commit into the project directory 
+
+```
+git restore <file>
+git restore .
+```
+
+And this would take the content from our last commit and put it into our working directory.
+
