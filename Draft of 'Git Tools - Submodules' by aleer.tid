@@ -2,7 +2,7 @@ created: 20200514190940982
 creator: aleer
 draft.of: Git Tools - Submodules
 draft.title: Git Tools - Submodules
-modified: 20200514211501952
+modified: 20221028000409842
 modifier: aleer
 tags: documentation
 title: Draft of 'Git Tools - Submodules' by aleer
@@ -30,5 +30,37 @@ We'll walk through developing a simple project that has been split up into a mai
 
 Let's start by adding an existing git repository as a submodule of the repository that we're working on.  To add a new submodule you use the `git submodule add` command with the absolute or relative URL of the project you would like to start tracking.  
 
-Let's start by adding an existing git repository as a submodule
+Let's start by adding an existing git repository as a submodule of the repository that we're working on. 
+
+To add a new submodule you use the `git submodule add`  command with the absolute or relative URL of the projet you would like to start tracking.  In this example, we'll add a library called "DbConnector".
+
+```
+$ git submodule add http://github.com/chconic/DbConnector
+Cloning into 'DbConnector'...
+remote: Counting objects: 11, done.
+remote Compressing objects: 100% (10/10), done.
+remote: Total 11 (delta 0), reused 11 (delta 0)
+Unpacking objects (100%) (11/11), done.
+Checking connectivity... done.
+```
+
+By default, submodules will add the subproject into a directory named the same as the repository, in this case `DbConnector`.  You can add a different path at the end of the command if you want it to go elsewhere.
+
+---
+
+If you run `git status` at this point, you'll notice a few things.
+
+```
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+   (use "git reset HEAD <file>..." to unstage)
+
+         new file: .gitmodules
+         new file: DbConnector
+```
+
+*First you should notice the new `.gitmodules` file.  This is a configuration file that stores  
 
