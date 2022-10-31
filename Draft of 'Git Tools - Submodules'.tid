@@ -1,9 +1,11 @@
 created: 20200514190940982
 creator: aleer
-modified: 20221029004431769
+draft.of: Git Tools - Submodules
+draft.title: Git Tools - Submodules
+modified: 20221029004446840
 modifier: aleer
 tags: documentation
-title: Git Tools - Submodules
+title: Draft of 'Git Tools - Submodules'
 type: text/vnd.tiddlywiki
 
 [[link|https://git-scm.com/book/en/v2/Git-Tools-Submodules]]
@@ -195,6 +197,6 @@ Fast-foward
 Now if you go back into the main project and run `git diff --submodule` you can see that the submodule was updated and get a list of commits that were added to it. If you don't want to type `--submodule` every time you run `git diff`, you can set it as the default format by setting the `diff.submodule` config value to `log`.
 
 ```
-
+$ git config 
 ```
 
