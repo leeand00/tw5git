@@ -1,0 +1,20 @@
+created: 20221106231659713
+modified: 20221106231659713
+tags: [[Cloning a Project with Submodules - Git Tools - Submodules]]
+title: 3 - Cloning a Project with Submodules - Git Tools - Submodules
+type: text/vnd.tiddlywiki
+
+```
+$ git submodule init
+Submodule 'DbConnector' (https://github.com/chaconinc/DbConnector) registered for path 'DbConnector'
+$ git submodule update
+Cloning into 'DbConnector' ...
+remote: Counting objects: 14, done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 14 (delta 1), reused 13 (delta 0)
+Unpacking objects: 100% (14/14), done.
+Checking connectivity... done.
+Submodule path 'DbConnector': checked out 'c3f01dc8862123d317dd46284b05b6892c7b29bc'
+```
+
+If you already cloned the project and forgot --recurse-submodules, you can combine the `git submodule init` and `git submodule update` steps by running `git submodule update --init`.  To also initialize, fetch and checkout any nested submodules, you can use the foolproof `git submodule update --init --recursive`

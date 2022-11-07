@@ -1,0 +1,29 @@
+created: 20221106230951873
+modified: 20221106231345895
+tags: [[Git Tools - Submodules]]
+title: Starting with Submodules - Git Tools - Submodules
+type: text/vnd.tiddlywiki
+
+
+''Starting with Submodules''
+
+We'll walk through developing a simple project that has been split up into a main project and a few sub-projects.
+
+<<tabs "[tag[Starting with Submodules - Git Tools - Submodules]sort[orders]]">>
+
+---
+
+[[1 - Starting with Submodules - Git Tools - Submodules]]
+
+[[2 - Starting with Submodules - Git Tools - Submodules]]
+
+
+[[3 - Starting with Submodules - Git Tools - Submodules]]
+
+[[4 - Starting with Submodules - Git Tools - Submodules]]
+
+[[5 - Starting with Submodules - Git Tools - Submodules]]
+
+[[6 - Starting with Submodules - Git Tools - Submodules]]
+
+[[7 - Starting with Submodules - Git Tools - Submodules]]

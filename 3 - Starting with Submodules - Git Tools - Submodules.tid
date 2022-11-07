@@ -1,0 +1,17 @@
+created: 20221106231216381
+modified: 20221106231216381
+tags: [[Starting with Submodules - Git Tools - Submodules]]
+title: 3 - Starting with Submodules - Git Tools - Submodules
+type: text/vnd.tiddlywiki
+
+*First you should notice the new `.gitmodules` file.  This is a configuration file that stores the mapping between the project's URL and the local subdirectory you've pulled into it into:
+
+```
+[submodule "DbConnector"]
+             path = DbConnector
+             url = https://github.com/chaconinc/DbConnector
+```
+
+If you have multiple submodules, you'll have multiple entries in this file.  It's important to note that this file is version-controlled with your other files, like your `.gitignore` file.  It's pushed and pulled with the rest of your project.  This is how other people who clone this project knw where to get the submodule projects from.  
+
+>''NOTE:'' Since the URL in the `.gitmodules` file is what other people will first try to clone/fetch from, make sure to use a URL that they can access if possible.  For example, if you use a different URL to push to than others would to pull from, use the one that others have access to.  You can overwrite this value locally with `git config submodule.DbConnector.url PRIVATE_URL`  for your own use.  When applicable, a relative URL can be helpful.

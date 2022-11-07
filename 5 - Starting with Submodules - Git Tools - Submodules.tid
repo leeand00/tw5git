@@ -1,0 +1,21 @@
+created: 20221106231253607
+modified: 20221106231253607
+tags: [[Starting with Submodules - Git Tools - Submodules]]
+title: 5 - Starting with Submodules - Git Tools - Submodules
+type: text/vnd.tiddlywiki
+
+If you want a nicer diff output, you can pass the `--submodule` option to `git diff`.
+
+```
+$ gif diff --cached --submodule
+diff --git a/.gitmodules b/.gitmodules
+new file mode 100644
+index 0000000..71fc376
+--- /dev/null
++++ b/.gitmodules
+@@ -0,0 +1,3 @@
++[submodule "DbConnector"]
++       path = DbConnector
++       url = https://github.com/chaconic/DbConnector
+Submodule DbConnector 0000000...c3f01dc (new submodule)
+```

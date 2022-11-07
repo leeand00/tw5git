@@ -1,0 +1,18 @@
+created: 20221106231306136
+modified: 20221106231306136
+tags: [[Starting with Submodules - Git Tools - Submodules]]
+title: 6 - Starting with Submodules - Git Tools - Submodules
+type: text/vnd.tiddlywiki
+
+When you commit, you see something like this:
+
+```
+$ git commit -am 'Add DbConnector module'
+[master fb9093c] Add DbConnector module
+ 2 files changed, 4 insertions(+)
+ create mode 100644 .gitmodules
+ create mode 160000
+```
+
+Notice that 160000 mode for the DbConnector entry.   That is a special mode in Git that basically means you're recording a commit as a directory entry rather than a subdirectory or a file.
+

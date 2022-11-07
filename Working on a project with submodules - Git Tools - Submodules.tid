@@ -1,0 +1,34 @@
+created: 20221106231823764
+modified: 20221106231823764
+tags: [[Git Tools - Submodules]]
+title: Working on a project with submodules - Git Tools - Submodules
+type: text/vnd.tiddlywiki
+
+!!Working on a Project with Submodules
+
+Now we have a copy of the project with submodules in it and will collaborate with our teammates on both the main project and the submodule project.
+
+!!!Pulling in Upstream Changes from the Submodule Remote
+
+The simplest model of using submodules in a project would be if you were simply consuming a subproject and wanted to get updates from it from time to time but were not actually modifying anything in your checkout.  Let's walk through a simple example there.
+
+If you want to check for new work in a submodule, you can go into the directory and run `git fetch` and `git merge` the upstream branch with the local code.
+
+```
+$ git fetch
+From https://github.com/chanonic/DbConnector
+ c3f01dc..d0354fc  master     -> origin/master
+$ git merge origin/master
+Updating c3f01dc..d0354fc
+Fast-foward
+ scripts/connect.sh | 1 +
+ src/db.c           | 1 +
+ 2 files changed, 2 insertions(+)
+```
+
+Now if you go back into the main project and run `git diff --submodule` you can see that the submodule was updated and get a list of commits that were added to it. If you don't want to type `--submodule` every time you run `git diff`, you can set it as the default format by setting the `diff.submodule` config value to `log`.
+
+```
+$ git config 
+```
+

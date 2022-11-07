@@ -1,0 +1,11 @@
+created: 20221106231317152
+modified: 20221106231317152
+tags: [[Starting with Submodules - Git Tools - Submodules]]
+title: 7 - Starting with Submodules - Git Tools - Submodules
+type: text/vnd.tiddlywiki
+
+Lastly, push these changes:
+
+```
+$ git push origin master.
+```

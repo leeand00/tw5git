@@ -1,0 +1,19 @@
+created: 20221106231149883
+modified: 20221106231149883
+tags: [[Starting with Submodules - Git Tools - Submodules]]
+title: 2 - Starting with Submodules - Git Tools - Submodules
+type: text/vnd.tiddlywiki
+
+If you run `git status` at this point, you'll notice a few things.
+
+```
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+   (use "git reset HEAD <file>..." to unstage)
+
+         new file: .gitmodules
+         new file: DbConnector
+```

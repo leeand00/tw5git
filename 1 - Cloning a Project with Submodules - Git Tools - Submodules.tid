@@ -1,0 +1,24 @@
+created: 20221106231634733
+modified: 20221106231634733
+tags: [[Cloning a Project with Submodules - Git Tools - Submodules]]
+title: 1 - Cloning a Project with Submodules - Git Tools - Submodules
+type: text/vnd.tiddlywiki
+
+```bash
+$ git clone https://github.com/chaconic/MainProject
+Cloning into 'MainProject'...
+remote: Counting objects: 14, done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 14 (delta 1), reused 13 (delta 0)
+Unpacking objects: 100% (14/14), done.
+Checking connectivity... done.
+$ cd MainProject
+$ ls -la
+total 16
+...files...
+$ cd DbConnector/
+$ ls 
+$ 
+```
+
+The `DbConnector` directory is there, but empty.  

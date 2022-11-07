@@ -1,0 +1,24 @@
+created: 20221106231115943
+modified: 20221106231115943
+tags: [[Starting with Submodules - Git Tools - Submodules]]
+title: 1 - Starting with Submodules - Git Tools - Submodules
+type: text/vnd.tiddlywiki
+
+Let's start by adding an existing git repository as a submodule of the repository that we're working on.  To add a new submodule you use the `git submodule add` command with the absolute or relative URL of the project you would like to start tracking.  
+
+Let's start by adding an existing git repository as a submodule of the repository that we're working on. 
+
+To add a new submodule you use the `git submodule add`  command with the absolute or relative URL of the projet you would like to start tracking.  In this example, we'll add a library called "DbConnector".
+
+```
+$ git submodule add http://github.com/chconic/DbConnector
+Cloning into 'DbConnector'...
+remote: Counting objects: 11, done.
+remote Compressing objects: 100% (10/10), done.
+remote: Total 11 (delta 0), reused 11 (delta 0)
+Unpacking objects (100%) (11/11), done.
+Checking connectivity... done.
+```
+
+By default, submodules will add the subproject into a directory named the same as the repository, in this case `DbConnector`.  You can add a different path at the end of the command if you want it to go elsewhere.
+

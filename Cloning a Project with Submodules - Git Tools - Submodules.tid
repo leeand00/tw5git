@@ -1,0 +1,21 @@
+created: 20221106231553238
+modified: 20221106231729226
+tags: [[Git Tools - Submodules]]
+title: Cloning a Project with Submodules - Git Tools - Submodules
+type: text/vnd.tiddlywiki
+
+!!Cloning a Project with Submodules
+
+Here we'll clone a project with a submodule in it.  When you clone such a project, by default you get the directories that contain submodules, but none of the files within them yet:
+
+<<tabs "[tag[Cloning a Project with Submodules - Git Tools - Submodules]sort[order]]">>
+
+---
+
+[[1 - Cloning a Project with Submodules - Git Tools - Submodules]]
+
+
+[[2 - Cloning a Project with Submodules - Git Tools - Submodules]]
+
+
+[[3 - Cloning a Project with Submodules - Git Tools - Submodules]]

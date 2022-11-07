@@ -1,0 +1,20 @@
+created: 20221106231241931
+modified: 20221106231241931
+tags: [[Starting with Submodules - Git Tools - Submodules]]
+title: 4 - Starting with Submodules - Git Tools - Submodules
+type: text/vnd.tiddlywiki
+
+The other listing in the `git status` output is the project folder entry.  If you run `git diff` on that, you see something interesting:
+
+```
+$ git diff --cached DbConnector
+diff --git a/DbConnector b/DbConnector
+new file mode 160000
+index 0000000..c3f01dc
+--- /dev/null
++++ b/DbConnector
+@@ -0,0 +1 @@
++Subproject commit c3f01dc8862123d317dd46284b05b6892c7...
+```
+
+Although `DbConnector` is a subdirectory in your working directory, Git see it as a submodule and doesn't track its contents when you're not in that directory.  Instead, Git sees it as a particular commit from that repository.
