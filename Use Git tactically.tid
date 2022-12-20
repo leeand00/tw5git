@@ -1,0 +1,9 @@
+created: 20221219233428690
+modified: 20221219233544908
+tags: toread
+title: Use Git tactically
+type: text/vnd.tiddlywiki
+
+[[link|https://stackoverflow.blog/2022/12/19/use-git-tactically/?cb=1]]
+
+How you can use micro-commits to effectively apply the Strangler Fig pattern.
