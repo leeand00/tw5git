@@ -1,0 +1,11 @@
+created: 20230120233203393
+draft.of: Testing Creating a Project with Submodules
+draft.title: Testing Creating a Project with Submodules
+modified: 20230121002735796
+title: Draft of 'Testing Creating a Project with Submodules'
+type: text/vnd.tiddlywiki
+
+So I had a project which turned into a project of subprojects and I need to have sub-repos to make them work...
+
+#Created a new repo for all the submodules...`git init`
+#Went into the existing projects and made sure all their changes were committed.
