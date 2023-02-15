@@ -1,7 +1,7 @@
 created: 20230120233203393
 draft.of: Testing Creating a Project with Submodules
 draft.title: Testing Creating a Project with Submodules
-modified: 20230121002735796
+modified: 20230215172417629
 title: Draft of 'Testing Creating a Project with Submodules'
 type: text/vnd.tiddlywiki
 
@@ -9,3 +9,5 @@ So I had a project which turned into a project of subprojects and I need to have
 
 #Created a new repo for all the submodules...`git init`
 #Went into the existing projects and made sure all their changes were committed.
+#Followed [[this tutorial|Starting with Submodules - Git Tools - Submodules]] and pulled the wrong branches (`master` by default).
+#Went into each branch and pulled 
