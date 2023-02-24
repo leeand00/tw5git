@@ -1,0 +1,11 @@
+created: 20230223233349670
+draft.of: New Tiddler 2
+draft.title: Git Tricks
+modified: 20230223233806279
+tags: article
+title: Draft of 'New Tiddler 2'
+type: text/vnd.tiddlywiki
+
+>The Git distributed version control system is a popular tool for managing open source development projects.  If you know the basics of Git, but are looking to learn the ways of the experts, read on for some useful Git tips and tricks.
+
+"You must know a few git experts", an editor at //Linux Magazine// said to me.  As the leader of the SUSE documentation team, I spend a large amount of time around veteran Linux developers.  When I agreed to ask the team for some tips for using Git version control system[1], I did not expect that I would trigger a thread that lasted several days (Figure 1).  The number and quality of the tips shows just how important Git is to SUSE developers.  This article rounds up some of my favorite tips.
