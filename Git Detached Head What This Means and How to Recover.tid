@@ -1,5 +1,5 @@
 created: 20230205000628716
-modified: 20230205015531224
+modified: 20230424120027041
 tags: detached-head
 title: Git Detached Head What This Means and How to Recover
 type: text/vnd.tiddlywiki
@@ -124,52 +124,6 @@ What should you do if you want to keep those changes?  And what should you do if
 
 You can't fix what isn't broken.  As I've said before, a detached HEAD is a valid state in Git.  It's not a problem.  But you may still want to know how to get back to normal, and that depends on why you're in this situation in the first place.
 
-!Scenario 1: I'm Here by Accident
-
-If you've reached the detached HEAD state by accident - that is to say, you didn't mean to check out a commit - going back is easy.  Just check out the branch you were in before:
-
-```
-git checkout <branch-name>
-```
-
-If you're using Git 2.23.0 or newer, you can also use `switch` instead of `checkout`:
-
-```
-git switch <branch-name>
-```
-
-!Scenario 2: I've Made Experimental Changes and I Want to Discard Them
-
-You've entered the detached HEAD state and made a few commits.  The experiment went nowhere, and you'll no longer work on it.  What do you do?  You do just the same as the previous scenario: go back to your original branch.  The changes you made while in the alternate timeline won't have any impact on your current branch.,
-
-!Scenario 3: I've Made Experimental Changes and I Want to Keep Them
-
-If you want to keep changes made with a detached HEAD, just create a new branch and switch to it.  You can create it right after arriving at a detached HEAD or after creating one or more commits.  The result is the same.  The only restriction is that you should do it before returning to your normal branch.
-
-Let's do it in our demo repo:
-
-```bash
-git branch alt-history
-git checkout alt-history
-```
-
-Notice how the result of `git log --online` is exactly the same as before (the only difference being the name of the branch indicated in the last commit):
-
-```bash
-$ git log --oneline
-c8f4f8e (HEAD -> alt-history) Add a new line to the file
-ec0118f Create new file
-87ec91d Add a line to the file
-3d11eb0 Create file
-```
-
-We could just run `git branch alt-history`, and we'd be all set.  That's the new - and final - version of our diagram:
-
-{{fix_detached_head4.png}}
-
----
-
-!Getting Rid of the "Git Detached HEAD" Message
 
 
-
+[[How do I fix Detactched Head - Git Detached Head What This Means and How to Recover]]

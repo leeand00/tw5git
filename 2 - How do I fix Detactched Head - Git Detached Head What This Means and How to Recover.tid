@@ -1,0 +1,12 @@
+caption: 2
+created: 20230422200743677
+modified: 20230424115539823
+order: 2
+tags: [[How do I fix Detactched Head - Git Detached Head What This Means and How to Recover]]
+title: 2 - How do I fix Detactched Head - Git Detached Head What This Means and How to Recover
+tooltip: I've Made Experimental Changes and I Want to Discard Them
+type: text/vnd.tiddlywiki
+
+!Scenario 2: I've Made Experimental Changes and I Want to Discard Them
+
+You've entered the detached HEAD state and made a few commits.  The experiment went nowhere, and you'll no longer work on it.  What do you do?  You do just the same as the previous scenario: go back to your original branch.  The changes you made while in the alternate timeline won't have any impact on your current branch.,

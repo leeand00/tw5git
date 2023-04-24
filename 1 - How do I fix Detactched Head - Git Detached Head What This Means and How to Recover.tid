@@ -1,0 +1,22 @@
+caption: 1
+created: 20230422200710044
+modified: 20230424115626848
+order: 1
+tags: [[How do I fix Detactched Head - Git Detached Head What This Means and How to Recover]]
+title: 1 - How do I fix Detactched Head - Git Detached Head What This Means and How to Recover
+tooltip: I'm Here by Accident
+type: text/vnd.tiddlywiki
+
+!Scenario 1: I'm Here by Accident
+
+If you've reached the detached HEAD state by accident - that is to say, you didn't mean to check out a commit - going back is easy.  Just check out the branch you were in before:
+
+```
+git checkout <branch-name>
+```
+
+If you're using Git 2.23.0 or newer, you can also use `switch` instead of `checkout`:
+
+```
+git switch <branch-name>
+```

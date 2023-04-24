@@ -1,0 +1,34 @@
+caption: 3
+created: 20230422200759746
+modified: 20230424115520626
+order: 3
+tags: [[How do I fix Detactched Head - Git Detached Head What This Means and How to Recover]]
+title: 3 - How do I fix Detactched Head - Git Detached Head What This Means and How to Recover
+tooltip: Scenario 3: I've Made Experimental Changes and I Want to Keep Them
+type: text/vnd.tiddlywiki
+
+!Scenario 3: I've Made Experimental Changes and I Want to Keep Them
+
+If you want to keep changes made with a detached HEAD, just create a new branch and switch to it.  You can create it right after arriving at a detached HEAD or after creating one or more commits.  The result is the same.  The only restriction is that you should do it before returning to your normal branch.
+
+Let's do it in our demo repo:
+
+```bash
+git branch alt-history
+git checkout alt-history
+```
+
+Notice how the result of `git log --online` is exactly the same as before (the only difference being the name of the branch indicated in the last commit):
+
+```bash
+$ git log --oneline
+c8f4f8e (HEAD -> alt-history) Add a new line to the file
+ec0118f Create new file
+87ec91d Add a line to the file
+3d11eb0 Create file
+```
+
+We could just run `git branch alt-history`, and we'd be all set.  That's the new - and final - version of our diagram:
+
+{{fix_detached_head4.png}}
+
