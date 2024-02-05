@@ -1,9 +1,7 @@
 created: 20240202001335853
-draft.of: New Tiddler 3
-draft.title: Learn Git-Grep to Boost Your Command Line Search
-modified: 20240202175759712
-tags: article
-title: Draft of 'New Tiddler 3'
+modified: 20240202185834729
+tags: article git-grep git-rev-list
+title: Learn Git-Grep to Boost Your Command Line Search
 type: text/vnd.tiddlywiki
 
 !Learn Git-Grep to Boost Your Command Line Search
@@ -99,3 +97,70 @@ To search for a file containing "foo" //and// "bar", not necessarily on the same
 ```
 git grep --all-match -e foo -e bar
 ```
+
+---
+
+There are more (check `man git-grep`, but above are the ones I find useful).
+
+---
+
+!Getting fancy: search within and between commits
+
+The real power of git grep is its ability to search inside ANY commit we want.
+
+Here are the two that I found very useful:
+
+---
+
+*Search inside specific commit
+
+Here are two ways to do it: reference it relative to `HEAD` and reference its SHA hash:
+
+*Search ONLY in one commit before current head
+
+```
+git grep "foo" HEAD~1 
+```
+
+---
+
+*Search ONLY in commit a1b2
+
+```
+git grep "foo" a1b2
+```
+
+---
+
+*Search everything between 2 commits
+
+This uses `git rev-list` command.  Here are some quick refreshers:
+
+*Returns all commits between `HEAD~3` and `HEAD`.
+
+```
+git rev-list HEAD~3..HEAD 
+```
+
+---
+
+```
+git rev-list --all // Returns ALL Commits from the dawn of time to present day.
+```
+
+---
+
+*Search for ALL occurrences of `foo` from the very beginning to current.
+
+```
+git grep foo $(git rev-list --all)
+```
+
+---
+
+Of course, we can put together everything we learned.  This returns filename(s) from very single commit we have that contain, in each file, `bar` and anything that matches `f[^\s]*\s` pattern.
+
+```
+git grep --all-match -l -e "f[^\s]*\s" -e bar $(git rev-list --all)
+```
+
