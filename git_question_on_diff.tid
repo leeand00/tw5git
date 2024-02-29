@@ -1,0 +1,12 @@
+created: 20240228210337987
+modified: 20240228210536059
+tags: 
+title: git_question_on_diff
+type: text/vnd.tiddlywiki
+
+[[link|https://stackoverflow.com/questions/8452820/how-to-compare-the-working-tree-with-a-commit]]
+
+{{gitdiffage2.png}}
+
+{{gitdiffage.png}}
+
