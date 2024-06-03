@@ -1,0 +1,21 @@
+caption: 1 (start)
+created: 20240602124046482
+modified: 20240602125630419
+order: 1
+tags: [[StartEnd - Features - git-flow cheatsheet]]
+title: Start - StartEnd - Features - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+!!Start a new feature
+
+Development of new features starting from the `develop` branch.
+
+{{feature_branch.png}}
+
+Start developing a new feature with:
+
+```
+git flow feature start MYFEATURE
+```
+
+This action creates a new feature branch based on `develop` and switches to it.

@@ -1,0 +1,13 @@
+caption: Linux
+created: 20240602115433237
+modified: 20240602122815117
+order: 1
+tags: [[Setup - git-flow cheetsheet]]
+title: Linux - Setup - git-flow cheetsheet
+type: text/vnd.tiddlywiki
+
+!!Linux
+
+```
+$ apt-get install git-flow
+```

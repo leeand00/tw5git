@@ -1,0 +1,12 @@
+caption: Win
+created: 20240602115449033
+modified: 20240602122834263
+tags: [[Setup - git-flow cheetsheet]]
+title: Windows - Setup - git-flow cheetsheet
+type: text/vnd.tiddlywiki
+
+!!Windows (Cygwin)
+
+```
+$ wget -q -O - --no-check-certificate https://raw.github.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh install stable \ bash
+```

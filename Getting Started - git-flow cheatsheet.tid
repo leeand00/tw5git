@@ -1,0 +1,23 @@
+caption: Repo Setup
+created: 20240602115717593
+modified: 20240602123022679
+order: 3
+tags: [[git-flow cheatsheet]]
+title: Getting Started - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+!Getting Started
+
+Git flow needs to be initialized in order to customize your project setup.
+
+!!Initialize
+
+Start using git-flow by initializing it inside an existing git repository:
+
+```
+git flow init
+```
+
+You'll have to answer a few questions regarding the naming conventions for your branches.
+
+It's recommended to use the default values.

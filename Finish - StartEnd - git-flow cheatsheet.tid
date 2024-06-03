@@ -1,0 +1,29 @@
+caption: 2 (finish)
+created: 20240602124120155
+modified: 20240602130458582
+order: 2
+tags: [[StartEnd - Features - git-flow cheatsheet]]
+title: Finish - StartEnd - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+!!Finish up a feature
+
+Finish the development of a feature.  This action performs the following:
+
+{{feature_merge_develop.png}}
+
+*Merges `myfeature` into `develop`
+*Removes the feature branch
+*Switches back to `develop` branch
+
+```
+git flow feature finish myfeature
+```
+
+(or keep the branch and merge it instead, with:)
+
+
+```
+git flow feature finish -k myfeature
+```
+

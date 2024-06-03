@@ -1,0 +1,37 @@
+caption: Hotfix
+created: 20240602122105506
+modified: 20240602123458172
+order: 7
+tags: [[git-flow cheatsheet]]
+title: Hotfixes - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+!Hotfixes
+
+*Hotfixes arise from the necessity to act immediately upon an undesired state of a live production version.
+*May be branched off from the corresponding tag on the master branch that marks the production version.
+
+
+!!Start a Hotfix
+
+{{git_flow_hot_fix_start.png}}
+
+Like the other git flow commands, a hotfix is started with
+
+```
+git flow hotfix start VERSION [BASENAME]
+```
+
+The version argument hereby marks the new hotfix release name.  Optionally you can specify a basename to start from.
+
+!!Finish a hotfix
+
+{{finish_a_hotfix.png}}
+
+By finishing a hotfix it gets merged back into `develop` and `master`.  
+
+Additionally the master merge is tagged with the hotfix version.
+
+```
+giot flow hotfix finish VERSION
+```

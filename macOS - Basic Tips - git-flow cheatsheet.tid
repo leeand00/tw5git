@@ -1,0 +1,13 @@
+caption: mac homebrew
+created: 20240602115406939
+modified: 20240602122909217
+tags: [[Setup - git-flow cheetsheet]]
+title: macOS - Basic Tips - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+!!macOS
+!!!Homebrew
+
+```
+$ brew install git-flow-avh
+```

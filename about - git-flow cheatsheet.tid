@@ -1,0 +1,15 @@
+caption: about
+created: 20240602115145794
+modified: 20240602123104775
+order: 0
+tags: [[git-flow cheatsheet]]
+title: about - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+!About
+
+git-flow are a set of git extensions to provide high-level repository operations for Vincent Driessen's branching model.
+
+[[more|http://nvie.com/posts/a-successful-git-branching-model/]]
+
+This cheatsheet shows the basic usage and effect of git-flow operations.

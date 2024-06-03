@@ -1,0 +1,21 @@
+caption: Features
+created: 20240602120516574
+modified: 20240602130610633
+order: 5
+tags: [[StartEnd - Features - git-flow cheatsheet]]
+title: StartEnd - Features - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+!Features
+
+*Develop new features for upcoming releases
+*Typically exists in developers repos only.
+
+<<tabs "[tag[StartEnd - Features - git-flow cheatsheet]sort[order]]">>
+
+---
+
+[[Start - StartEnd - Features - git-flow cheatsheet]]
+
+[[Finish - StartEnd - git-flow cheatsheet]]
+

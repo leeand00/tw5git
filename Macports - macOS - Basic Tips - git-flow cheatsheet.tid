@@ -1,0 +1,12 @@
+caption: mac macports
+created: 20240602115423771
+modified: 20240602122924501
+tags: [[Setup - git-flow cheetsheet]]
+title: Macports - macOS - Basic Tips - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+!!!Macports
+
+```
+$ port install git-flow-avh
+```

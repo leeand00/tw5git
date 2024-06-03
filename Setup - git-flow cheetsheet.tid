@@ -1,0 +1,27 @@
+caption: setup
+created: 20240602115216102
+modified: 20240602122939448
+order: 2
+tags: [[git-flow cheatsheet]]
+title: Setup - git-flow cheetsheet
+type: text/vnd.tiddlywiki
+
+!Setup
+
+*You need a working git installation as prerequisite.
+*Git flow works on macOS, Linux and windows.
+
+<<tabs "[tag[Setup - git-flow cheetsheet]]">>
+
+---
+
+[[macOS - Basic Tips - git-flow cheatsheet]]
+
+
+[[Macports - macOS - Basic Tips - git-flow cheatsheet]]
+
+
+[[Linux - Setup - git-flow cheetsheet]]
+
+
+[[Windows - Setup - git-flow cheetsheet]]

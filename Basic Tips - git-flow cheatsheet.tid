@@ -1,0 +1,13 @@
+caption: basic-tips
+created: 20240602115157923
+modified: 20240602122647573
+order: 1
+tags: [[git-flow cheatsheet]]
+title: Basic Tips - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+!Basic Tips
+
+*git-flow provides excellent command line help and output.  Read it carefully to see what's happening...
+*The macOS/Windows Client [[Sourcetree|http://www.sourcetreeapp.com/]] is an excellent git gui and provides git-flow support.
+*git-flow is a merge based solution.  It doesn't rebase feature branches.
