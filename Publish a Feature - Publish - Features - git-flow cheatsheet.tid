@@ -1,0 +1,19 @@
+caption: Publish Feature
+created: 20240602120616105
+modified: 20240603184414536
+order: 5
+tags: [[Publish - Features - git-flow cheatsheet]]
+title: Publish a Feature - Publish - Features - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+!!Publish a feature
+
+{{publish_feature.png}}
+
+Are you a developing a feature in collaboration?
+
+Publish a feature to the remote server so it can be used by other users.
+
+```
+git flow feature publish myfeature
+```

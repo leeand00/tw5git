@@ -1,0 +1,28 @@
+caption: mk release
+created: 20240603185049331
+modified: 20240603185747909
+order: 0
+tags: [[Make a Release - git-flow cheatsheet]]
+title: Make a Release - Make a Release - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+
+!!Start a release
+
+To start a release, use the "git flow release" command.  It creates a release branch created from the `develop` branch.
+
+{{develop_to_release.png}}
+
+```
+git flow release start RELEASE [BASE]
+```
+
+You can optionally supply a `[BASE]` commit sha-1 hash to start the release from.  The commit must be on the `develop` branch.
+
+It's wise to publish the release branch after creating it to allow release commits by other developers.  Do it similar to feature publishing with the command:
+
+```
+git flow release publish RELEASE
+```
+
+(You can track a remote release with the `git flow release track RELEASE` command)

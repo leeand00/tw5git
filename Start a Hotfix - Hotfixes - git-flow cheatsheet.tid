@@ -1,0 +1,20 @@
+caption: Start
+created: 20240603185859082
+modified: 20240603190041643
+order: 1
+tags: [[Hotfixes - git-flow cheatsheet]]
+title: Start a Hotfix - Hotfixes - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+
+!!Start a Hotfix
+
+{{git_flow_hot_fix_start.png}}
+
+Like the other git flow commands, a hotfix is started with
+
+```
+git flow hotfix start VERSION [BASENAME]
+```
+
+The version argument hereby marks the new hotfix release name.  Optionally you can specify a basename to start from.

@@ -1,0 +1,28 @@
+caption: finish rel
+created: 20240603185112421
+modified: 20240603185727899
+order: 1
+tags: [[Make a Release - git-flow cheatsheet]]
+title: Finish up a Release - Make a Release - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+!!Finish up a release
+
+{{finish_up_a_release.png}}
+
+Finishing a release is one of the big steps in git branching.  It performs several actions:
+
+*Merges the release branch back into `master`.
+*Tags the release with its name.
+*Back-merges the release into `develop`.
+*Removes the release branch.
+
+```
+git flow release finish RELEASE
+```
+
+Don't forget to push your tags with:
+
+```
+git push origin --tags
+```

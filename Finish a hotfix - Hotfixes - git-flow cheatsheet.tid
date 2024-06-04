@@ -1,0 +1,19 @@
+caption: Finish
+created: 20240603185937221
+modified: 20240603190122697
+order: 2
+tags: [[Hotfixes - git-flow cheatsheet]]
+title: Finish a hotfix - Hotfixes - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+!!Finish a hotfix
+
+{{finish_a_hotfix.png}}
+
+By finishing a hotfix it gets merged back into `develop` and `master`.  
+
+Additionally the master merge is tagged with the hotfix version.
+
+```
+giot flow hotfix finish VERSION
+```

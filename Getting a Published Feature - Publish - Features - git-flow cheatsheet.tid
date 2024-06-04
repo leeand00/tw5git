@@ -1,0 +1,22 @@
+caption: Getting
+created: 20240603184416287
+modified: 20240603184633026
+tags: [[Publish - Features - git-flow cheatsheet]]
+title: Getting a Published Feature - Publish - Features - git-flow cheatsheet
+type: text/vnd.tiddlywiki
+
+!!Getting a published feature
+
+Get a feature published by another user.
+
+{{get_published_feature.png}}
+
+```
+git flow feature pull origin myfeature
+```
+
+You can track a feature on origin by using
+
+```
+git flow feature track myfeature
+```
