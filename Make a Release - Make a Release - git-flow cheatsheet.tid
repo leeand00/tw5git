@@ -1,6 +1,6 @@
 caption: mk release
 created: 20240603185049331
-modified: 20240603185747909
+modified: 20240614215556569
 order: 0
 tags: [[Make a Release - git-flow cheatsheet]]
 title: Make a Release - Make a Release - git-flow cheatsheet
@@ -14,7 +14,7 @@ To start a release, use the "git flow release" command.  It creates a release br
 {{develop_to_release.png}}
 
 ```
-git flow release start RELEASE [BASE]
+git flow release start <RELEASE-name> [branch-from-which-to-create-release]
 ```
 
 You can optionally supply a `[BASE]` commit sha-1 hash to start the release from.  The commit must be on the `develop` branch.
@@ -22,7 +22,7 @@ You can optionally supply a `[BASE]` commit sha-1 hash to start the release from
 It's wise to publish the release branch after creating it to allow release commits by other developers.  Do it similar to feature publishing with the command:
 
 ```
-git flow release publish RELEASE
+git flow release publish <RELEASE-name>
 ```
 
 (You can track a remote release with the `git flow release track RELEASE` command)
