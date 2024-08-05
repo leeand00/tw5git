@@ -1,0 +1,15 @@
+created: 20240804012528759
+draft.of: New Tiddler 3
+draft.title: Git Submodule W3Docs
+modified: 20240804012714977
+tags: 
+title: Draft of 'New Tiddler 3'
+type: text/vnd.tiddlywiki
+
+[[link|https://www.w3docs.com/learn-git/git-submodule.html]]
+
+!Git Submodule
+
+!!What is Submodule
+
+Very often, the code repository depends on the external code from other repositories.  You can copy and paste the external code from other 
